@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台灣康匠 115年員工旅遊｜佐世保 × 釜山 郵輪之旅</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0a2540; --navy2:#10355a;
+  --ocean:#1597a5; --ocean-br:#28c2d2; --teal:#0fb7c4;
+  --foam:#e9f8fa; --foam2:#d6eff3;
+  --coral:#ff6f5e; --coral-d:#ef5340;
+  --sun:#ffc24d; --sun-d:#f7ad1f;
+  --sand:#fff2dd;
+  --ink:#0e2436; --ink2:#3c596f; --muted:#7c93a5;
+  --paper:#f3fafc; --card:#ffffff;
+  --line:#e2eef3;
+  --gold:#dba328;
+  --r-lg:24px; --r-md:18px; --r-sm:12px;
+  --sh-sm:0 2px 10px rgba(13,52,82,.06);
+  --sh-md:0 10px 30px rgba(13,52,82,.10);
+  --sh-lg:0 22px 55px rgba(13,52,82,.16);
+  --sans:"Noto Sans TC","Microsoft JhengHei","微軟正黑體","PingFang TC","Hiragino Sans",sans-serif;
+  --disp:"Baloo 2","Noto Sans TC","Microsoft JhengHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input,select,textarea{font-family:inherit;font-size:15px}
+
+/* ---------- layout helpers ---------- */
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.section{padding:62px 0;position:relative}
+.eyebrow{
+  font-family:var(--disp);font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  font-size:13px;color:var(--ocean);display:inline-flex;align-items:center;gap:8px;
+}
+.eyebrow::before{content:"";width:26px;height:3px;border-radius:3px;background:var(--coral)}
+.h2{font-size:clamp(26px,4.4vw,40px);font-weight:900;letter-spacing:-.01em;margin:12px 0 6px;line-height:1.2}
+.lead{color:var(--ink2);font-size:17px;max-width:640px}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;padding:4px 11px;border-radius:999px;white-space:nowrap}
+.tag-free{background:#e4f7ef;color:#159b6b}
+.tag-paid{background:#fff0e9;color:#e2622f}
+.tag-self{background:#eef0ff;color:#5a63d8}
+
+/* ---------- top nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:60;
+  backdrop-filter:saturate(1.4) blur(12px);
+  background:rgba(243,250,252,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;align-items:center;gap:14px;height:62px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:16px;white-space:nowrap}
+.brand .dot{width:30px;height:30px;border-radius:999px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--ocean),var(--teal));color:#fff;font-size:17px;box-shadow:var(--sh-sm)}
+.nav-links{display:flex;gap:4px;margin-left:auto;overflow:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  font-size:14px;font-weight:700;color:var(--ink2);padding:8px 13px;border-radius:999px;
+  white-space:nowrap;transition:.18s
+}
+.nav-links a:hover{background:var(--foam2);color:var(--navy)}
+.nav-links a.active{background:var(--navy);color:#fff}
+.nav-cta{display:none}
+@media(min-width:880px){.nav-cta{display:inline-flex}}
+.nav-cta{
+  background:var(--coral);color:#fff;font-weight:800;font-size:14px;padding:9px 16px;border-radius:999px;
+  box-shadow:0 6px 16px rgba(255,111,94,.35);transition:.18s
+}
+.nav-cta:hover{transform:translateY(-1px);background:var(--coral-d)}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;color:#fff;
+  background:
+    radial-gradient(1200px 500px at 80% -10%, rgba(40,194,210,.55), transparent 60%),
+    radial-gradient(900px 500px at 0% 110%, rgba(255,194,77,.30), transparent 55%),
+    linear-gradient(160deg,#0a2540 0%,#10406a 48%,#147f93 100%);
+}
+.hero-in{position:relative;z-index:3;padding:46px 0 150px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.25);padding:7px 15px;border-radius:999px;
+  font-weight:700;font-size:13.5px;backdrop-filter:blur(4px)
+}
+.hero h1{
+  font-size:clamp(30px,6.4vw,60px);font-weight:900;line-height:1.08;letter-spacing:-.02em;
+  margin:20px 0 10px
+}
+.hero h1 .hl{
+  background:linear-gradient(110deg,var(--sun),#ffe6a8);-webkit-background-clip:text;background-clip:text;color:transparent
+}
+.hero-sub{font-size:clamp(16px,2.4vw,21px);color:#dcefff;font-weight:600;max-width:560px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:10px 15px;font-weight:700;font-size:14.5px
+}
+.chip b{font-family:var(--disp)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:15.5px;
+  padding:13px 22px;border-radius:14px;transition:.18s;border:2px solid transparent
+}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 10px 26px rgba(255,111,94,.4)}
+.btn-primary:hover{transform:translateY(-2px);background:var(--coral-d)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+
+/* countdown */
+.count{display:flex;gap:9px;margin-top:30px}
+.count .cell{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);border-radius:14px;
+  padding:11px 6px;min-width:66px;text-align:center}
+.count .num{font-family:var(--disp);font-weight:800;font-size:30px;line-height:1;color:#fff}
+.count .lab{font-size:11px;color:#bfe6ee;font-weight:700;margin-top:5px;letter-spacing:.05em}
+
+/* hero ship + waves */
+.ship-wrap{position:absolute;right:max(-30px,calc(50% - 560px));bottom:118px;width:min(460px,52vw);z-index:2;
+  animation:bob 6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-12px) rotate(.6deg)}}
+.waves{position:absolute;left:0;right:0;bottom:-1px;z-index:2;line-height:0}
+.wave-move{animation:drift 9s linear infinite}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.hero-fade{position:absolute;inset:auto 0 0 0;height:130px;background:linear-gradient(to bottom,transparent,var(--paper));z-index:2}
+
+/* ---------- timeline ---------- */
+.tl{display:grid;gap:14px;margin-top:30px}
+@media(min-width:760px){.tl{grid-template-columns:repeat(6,1fr);gap:12px}}
+.tl-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:16px 15px;
+  box-shadow:var(--sh-sm);position:relative;transition:.2s;overflow:hidden
+}
+.tl-card:hover{transform:translateY(-4px);box-shadow:var(--sh-md);border-color:var(--foam2)}
+.tl-card .day{font-family:var(--disp);font-weight:800;font-size:13px;color:var(--ocean);letter-spacing:.05em}
+.tl-card .date{font-weight:900;font-size:20px;margin-top:2px}
+.tl-card .dow{font-size:12.5px;color:var(--muted);font-weight:700}
+.tl-card .ic{font-size:30px;margin:8px 0 4px;display:block}
+.tl-card .port{font-weight:800;font-size:15px}
+.tl-card .time{font-size:12px;color:var(--ink2);margin-top:6px;font-weight:600}
+.tl-card .time span{font-family:var(--disp)}
+.tl-card.freeday{border-color:var(--sun);box-shadow:0 8px 22px rgba(247,173,31,.18)}
+.tl-card.freeday::before{content:"自由行";position:absolute;top:10px;right:-26px;transform:rotate(40deg);
+  background:var(--sun-d);color:#5a3d00;font-size:10px;font-weight:800;padding:3px 28px}
+.tl-card.sea{background:linear-gradient(160deg,#eef9fb,#ffffff)}
+
+/* ---------- generic card grids ---------- */
+.grid{display:grid;gap:16px;margin-top:30px}
+.grid.g2{grid-template-columns:1fr}
+.grid.g3{grid-template-columns:1fr}
+@media(min-width:640px){.grid.g2{grid-template-columns:1fr 1fr}.grid.g3{grid-template-columns:1fr 1fr}}
+@media(min-width:920px){.grid.g3{grid-template-columns:1fr 1fr 1fr}}
+.feat{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:20px;
+  box-shadow:var(--sh-sm);transition:.2s;position:relative
+}
+.feat:hover{transform:translateY(-4px);box-shadow:var(--sh-md)}
+.feat .fic{font-size:30px;width:54px;height:54px;border-radius:15px;display:grid;place-items:center;
+  background:var(--foam);margin-bottom:12px}
+.feat h3{font-size:17px;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.feat p{color:var(--ink2);font-size:14.5px;margin-top:7px}
+
+/* ---------- daily accordion ---------- */
+.days{margin-top:28px;display:grid;gap:13px}
+.dacc{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--sh-sm)}
+.dacc-head{display:flex;align-items:center;gap:14px;padding:17px 18px;cursor:pointer;user-select:none}
+.dacc-head .n{font-family:var(--disp);font-weight:800;font-size:14px;color:#fff;background:linear-gradient(135deg,var(--ocean),var(--teal));
+  width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex:none;text-align:center;line-height:1.05}
+.dacc-head .n small{display:block;font-size:9px;opacity:.85;font-weight:700}
+.dacc-head .ttl{font-weight:800;font-size:16.5px;flex:1}
+.dacc-head .ttl .sub{display:block;font-size:12.5px;color:var(--muted);font-weight:700;margin-top:1px}
+.dacc-head .tm{font-size:12px;font-weight:700;color:var(--ocean);text-align:right;line-height:1.4;flex:none}
+.dacc-head .tm span{font-family:var(--disp)}
+.dacc-head .arr{transition:.25s;color:var(--muted);flex:none;font-size:18px}
+.dacc.open .dacc-head .arr{transform:rotate(180deg)}
+.dacc-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.dacc-inner{padding:2px 18px 20px;border-top:1px dashed var(--line)}
+.meal{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.meal .m{font-size:12.5px;font-weight:700;background:var(--foam);border-radius:10px;padding:6px 11px;color:var(--ink2)}
+.meal .m b{color:var(--navy)}
+.dlist{margin-top:10px;display:grid;gap:7px}
+.dlist li{list-style:none;display:flex;gap:9px;font-size:14.5px;color:var(--ink2)}
+.dlist li::before{content:"⚓";font-size:13px;line-height:1.5}
+.dgo{display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:var(--sun);color:#5a3d00;
+  font-weight:800;font-size:14px;padding:9px 16px;border-radius:11px;transition:.18s}
+.dgo:hover{transform:translateY(-2px);background:var(--sun-d)}
+
+/* ---------- estimator ---------- */
+.calc{margin-top:30px;display:grid;gap:18px}
+@media(min-width:880px){.calc{grid-template-columns:1.35fr .9fr;align-items:start}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px;box-shadow:var(--sh-sm)}
+.calc-tabs{display:flex;gap:8px;margin-bottom:18px;background:var(--foam);padding:5px;border-radius:14px}
+.calc-tabs button{flex:1;padding:10px;border-radius:10px;font-weight:800;font-size:14.5px;color:var(--ink2);transition:.18s}
+.calc-tabs button.on{background:var(--card);color:var(--navy);box-shadow:var(--sh-sm)}
+.field{padding:15px 0;border-bottom:1px dashed var(--line)}
+.field:last-child{border-bottom:none}
+.field>label{font-weight:800;font-size:15px;display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.field .hint{font-size:12.5px;color:var(--muted);font-weight:600;margin-top:7px;line-height:1.55}
+.seg{display:flex;gap:7px;flex-wrap:wrap}
+.seg button{flex:1;min-width:84px;padding:10px 8px;border-radius:11px;border:1.5px solid var(--line);
+  background:var(--paper);font-weight:700;font-size:13.5px;color:var(--ink2);transition:.16s;text-align:center}
+.seg button .px{display:block;font-size:11.5px;color:var(--muted);font-weight:700;margin-top:2px;font-family:var(--disp)}
+.seg button.on{border-color:var(--ocean);background:var(--foam);color:var(--navy);box-shadow:0 4px 12px rgba(21,151,165,.14)}
+.seg button.on .px{color:var(--ocean)}
+.numrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.stepper{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:11px;overflow:hidden;background:var(--paper)}
+.stepper button{width:38px;height:40px;font-size:20px;font-weight:800;color:var(--ocean);background:var(--card)}
+.stepper button:active{background:var(--foam)}
+.stepper .v{width:46px;text-align:center;font-weight:800;font-family:var(--disp);font-size:17px}
+.priceinput{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:11px;background:var(--paper);padding:0 12px;height:42px}
+.priceinput span{color:var(--muted);font-weight:700;font-size:14px}
+.priceinput input{width:92px;border:none;background:none;text-align:right;font-weight:800;font-family:var(--disp);font-size:16px;color:var(--navy);outline:none}
+.tour-sel{width:100%;height:44px;border:1.5px solid var(--line);border-radius:11px;background:var(--paper);padding:0 12px;font-weight:700;color:var(--ink);margin-top:4px;cursor:pointer}
+.sizetoggle{display:flex;gap:7px;margin-top:10px}
+.sizetoggle button{flex:1;padding:8px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);font-weight:700;font-size:13px;color:var(--ink2)}
+.sizetoggle button.on{border-color:var(--coral);background:#fff2ee;color:var(--coral-d)}
+
+/* total card */
+.total{position:sticky;top:78px;background:linear-gradient(160deg,#0a2540,#13507e);color:#fff;border-radius:var(--r-lg);
+  padding:24px;box-shadow:var(--sh-lg)}
+.total h3{font-size:16px;font-weight:800;color:#bfe6ee;display:flex;align-items:center;gap:8px}
+.total .big{font-family:var(--disp);font-weight:800;font-size:46px;line-height:1.05;margin:6px 0 2px}
+.total .big small{font-size:18px;font-weight:700;color:#bfe6ee}
+.total .per{font-size:13px;color:#a9d6e0;font-weight:600}
+.brk{margin-top:18px;display:grid;gap:9px}
+.brk .row{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:#dcefff}
+.brk .row span:first-child{display:flex;align-items:center;gap:7px}
+.brk .row b{font-family:var(--disp);font-weight:700;color:#fff}
+.brk .sub{padding-left:0;font-size:12.5px;color:#9fcdd8}
+.brk hr{border:none;border-top:1px solid rgba(255,255,255,.16);margin:4px 0}
+.paxbox{margin-top:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:13px 15px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.paxbox .lab{font-weight:800;font-size:14px}
+.group-total{margin-top:12px;font-size:13.5px;color:#bfe6ee;text-align:center;font-weight:700}
+.group-total b{font-family:var(--disp);color:var(--sun);font-size:18px}
+.disc{font-size:11.5px;color:#8fbecb;margin-top:16px;line-height:1.6;border-top:1px solid rgba(255,255,255,.14);padding-top:12px}
+
+/* ---------- precautions ---------- */
+.acc{margin-top:28px;display:grid;gap:11px}
+@media(min-width:760px){.acc{grid-template-columns:1fr 1fr}}
+.acc-item{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--sh-sm);align-self:start}
+.acc-h{display:flex;align-items:center;gap:11px;padding:15px 17px;cursor:pointer;font-weight:800;font-size:15.5px;user-select:none}
+.acc-h .ai{font-size:21px}
+.acc-h .arr{margin-left:auto;color:var(--muted);transition:.25s}
+.acc-item.open .acc-h .arr{transform:rotate(180deg)}
+.acc-c{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.acc-c .pad{padding:0 17px 17px;color:var(--ink2);font-size:14px}
+.acc-c .pad li{margin-left:18px;margin-top:6px}
+.star{color:var(--coral-d);font-weight:800}
+
+/* checklist */
+.checklist{margin-top:18px;background:linear-gradient(160deg,#fff9ef,#fff);border:1.5px solid var(--sand);
+  border-radius:var(--r-lg);padding:22px;box-shadow:var(--sh-sm)}
+.checklist h3{font-size:18px;font-weight:900;display:flex;align-items:center;gap:9px}
+.checklist .bar{height:9px;border-radius:999px;background:#f0e3cc;margin:14px 0 6px;overflow:hidden}
+.checklist .bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--sun),var(--coral));width:0;transition:width .4s}
+.checklist .barlab{font-size:12.5px;font-weight:700;color:var(--ink2);margin-bottom:14px}
+.cl-grid{display:grid;gap:8px}
+@media(min-width:620px){.cl-grid{grid-template-columns:1fr 1fr}}
+.cl-item{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:11px 13px;cursor:pointer;transition:.16s;font-size:14px}
+.cl-item:hover{border-color:var(--sun)}
+.cl-item.done{background:#f3fbf6;border-color:#c9ecd6}
+.cl-item.done .txt{text-decoration:line-through;color:var(--muted)}
+.cl-box{width:21px;height:21px;border-radius:7px;border:2px solid var(--line);flex:none;display:grid;place-items:center;
+  font-size:13px;color:#fff;transition:.16s;margin-top:1px}
+.cl-item.done .cl-box{background:#2bb673;border-color:#2bb673}
+
+/* ---------- discussion ---------- */
+.disc-hero{background:linear-gradient(160deg,#10406a,#147f93);color:#fff;border-radius:var(--r-lg);padding:26px;box-shadow:var(--sh-lg);position:relative;overflow:hidden}
+.disc-hero::after{content:"🗺️";position:absolute;right:-6px;bottom:-18px;font-size:120px;opacity:.13;transform:rotate(-12deg)}
+.disc-hero .eyebrow{color:#bfe6ee}
+.disc-hero .eyebrow::before{background:var(--sun)}
+.disc-hero h2{font-size:clamp(24px,4vw,34px);font-weight:900;margin:10px 0 8px}
+.disc-hero p{color:#dcefff;max-width:560px;font-size:15.5px;position:relative;z-index:2}
+
+/* name gate */
+.namegate{margin-top:18px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:16px;
+  padding:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;position:relative;z-index:2}
+.namegate input{flex:1;min-width:180px;height:46px;border-radius:12px;border:none;padding:0 15px;font-weight:700;background:#fff;color:var(--ink);outline:none}
+.namegate button{height:46px;background:var(--sun);color:#5a3d00;font-weight:800;padding:0 22px;border-radius:12px;transition:.16s;white-space:nowrap}
+.namegate button:hover{background:var(--sun-d)}
+.whoami{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:700;font-size:15px;position:relative;z-index:2}
+.whoami .av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;font-size:15px;flex:none}
+.whoami .chg{font-size:13px;color:#bfe6ee;text-decoration:underline;font-weight:700;background:none}
+
+/* board */
+.board{margin-top:22px}
+.port-tabs{display:flex;gap:9px;margin-bottom:18px}
+.port-tabs button{flex:1;padding:14px 12px;border-radius:16px;border:1.5px solid var(--line);background:var(--card);
+  font-weight:800;font-size:16px;color:var(--ink2);transition:.18s;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:var(--sh-sm)}
+.port-tabs button .flag{font-size:22px}
+.port-tabs button .meta{font-size:11.5px;color:var(--muted);font-weight:700}
+.port-tabs button.on{border-color:var(--ocean);background:linear-gradient(160deg,#eaf8fb,#fff);color:var(--navy)}
+.port-tabs button.on .meta{color:var(--ocean)}
+
+.ideas{background:var(--foam);border:1px dashed var(--ocean);border-radius:var(--r-md);padding:16px 16px 13px;margin-bottom:18px}
+.ideas .il{font-weight:800;font-size:13.5px;color:var(--ocean);display:flex;align-items:center;gap:7px;margin-bottom:11px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip-idea{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:7px 13px;font-size:13.5px;font-weight:700;color:var(--ink2);transition:.16s;cursor:pointer}
+.chip-idea:hover{border-color:var(--coral);color:var(--coral-d);transform:translateY(-1px)}
+.chip-idea .plus{font-weight:800;color:var(--ocean)}
+
+/* add form */
+.addform{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:18px;box-shadow:var(--sh-sm);margin-bottom:18px}
+.addform .ttl{font-weight:800;font-size:15.5px;margin-bottom:13px;display:flex;align-items:center;gap:8px}
+.frow{display:grid;gap:10px}
+@media(min-width:640px){.frow.two{grid-template-columns:1.3fr 1fr}}
+.inp{width:100%;height:46px;border:1.5px solid var(--line);border-radius:12px;padding:0 14px;background:var(--paper);outline:none;transition:.16s}
+.inp:focus{border-color:var(--ocean);background:#fff}
+textarea.inp{height:auto;padding:12px 14px;resize:vertical;min-height:46px;line-height:1.6}
+.catpick{display:flex;flex-wrap:wrap;gap:7px;margin:11px 0}
+.catpick button{padding:8px 13px;border-radius:999px;border:1.5px solid var(--line);background:var(--paper);font-weight:700;font-size:13.5px;color:var(--ink2);transition:.16s}
+.catpick button.on{border-color:transparent;color:#fff}
+
+.addbtn{width:100%;height:50px;background:var(--coral);color:#fff;font-weight:800;font-size:16px;border-radius:13px;
+  margin-top:6px;transition:.16s;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 8px 20px rgba(255,111,94,.32)}
+.addbtn:hover{background:var(--coral-d);transform:translateY(-1px)}
+
+/* sort row */
+.sortrow{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:14px}
+.sortrow .cnt{font-weight:800;font-size:15px}
+.sortrow .cnt b{color:var(--ocean);font-family:var(--disp)}
+.sortrow .sp{margin-left:auto;display:flex;gap:6px}
+.sortrow .sp button{padding:7px 13px;border-radius:999px;font-weight:700;font-size:13px;color:var(--ink2);border:1.5px solid var(--line);background:var(--card)}
+.sortrow .sp button.on{border-color:var(--navy);background:var(--navy);color:#fff}
+.refresh{padding:7px 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);font-weight:700;font-size:13px;color:var(--ink2);display:inline-flex;align-items:center;gap:6px}
+
+/* spot cards */
+.spots{display:grid;gap:13px}
+@media(min-width:680px){.spots{grid-template-columns:1fr 1fr}}
+.spot{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:16px;box-shadow:var(--sh-sm);
+  transition:.18s;position:relative;display:flex;flex-direction:column;animation:pop .3s ease}
+@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+.spot:hover{box-shadow:var(--sh-md);transform:translateY(-3px)}
+.spot .cat{display:inline-flex;align-items:center;gap:5px;align-self:flex-start;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;color:#fff;margin-bottom:9px}
+.spot .nm{font-weight:800;font-size:17px;line-height:1.35}
+.spot .nt{color:var(--ink2);font-size:14px;margin-top:6px;white-space:pre-wrap;word-break:break-word}
+.spot .extra{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}
+.spot .ec{font-size:12.5px;font-weight:700;background:var(--foam);color:var(--ink2);padding:5px 10px;border-radius:9px;display:inline-flex;align-items:center;gap:5px}
+.spot .ec a{color:var(--ocean);text-decoration:none}
+.spot .foot{display:flex;align-items:center;gap:9px;margin-top:14px;padding-top:13px;border-top:1px dashed var(--line)}
+.spot .av{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;font-size:13px;flex:none}
+.spot .auth{font-size:12.5px;color:var(--muted);font-weight:700;flex:1;line-height:1.3}
+.spot .auth b{color:var(--ink2);display:block;font-size:13px}
+.vote{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--line);background:var(--paper);
+  border-radius:999px;padding:7px 14px;font-weight:800;font-size:14px;color:var(--ink2);transition:.16s}
+.vote:hover{border-color:var(--coral)}
+.vote.voted{border-color:var(--coral);background:#fff2ee;color:var(--coral-d)}
+.vote .c{font-family:var(--disp)}
+.del{position:absolute;top:13px;right:13px;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
+  color:var(--muted);background:var(--paper);border:1px solid var(--line);font-size:14px;transition:.16s}
+.del:hover{color:var(--coral-d);border-color:var(--coral);background:#fff2ee}
+.empty{grid-column:1/-1;text-align:center;padding:42px 20px;color:var(--muted);background:var(--card);border:1px dashed var(--line);border-radius:var(--r-md)}
+.empty .e{font-size:46px;display:block;margin-bottom:10px}
+.empty b{color:var(--ink2);font-size:16px;display:block;margin-bottom:5px}
+
+.storage-note{margin-top:16px;background:var(--foam);border-radius:13px;padding:13px 15px;font-size:13px;color:var(--ink2);font-weight:600;display:flex;gap:9px;align-items:flex-start}
+.storage-warn{background:#fff7e8;border:1px solid var(--sand);color:#9a6a13}
+
+/* fold reference table */
+.fold{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--sh-sm)}
+.fold-h{display:flex;align-items:center;gap:10px;padding:16px 18px;cursor:pointer;font-weight:800;font-size:15.5px;user-select:none}
+.fold-h .arr{margin-left:auto;color:var(--muted);transition:.25s}
+.fold.open .fold-h .arr{transform:rotate(180deg)}
+.fold-c{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.fold-c .pad{padding:4px 18px 20px}
+.tblwrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:460px}
+th,td{padding:10px 12px;text-align:center;border-bottom:1px solid var(--line)}
+th{background:var(--foam);font-weight:800;color:var(--navy);position:sticky;top:0}
+td:first-child,th:first-child{text-align:left;font-weight:700}
+tr:last-child td{border-bottom:none}
+.tnum{font-family:var(--disp);font-weight:700}
+.hl-row td{background:#fff8ea}
+
+/* footer */
+.foot-final{background:var(--navy);color:#cfe3ee;padding:40px 0 46px;margin-top:20px}
+.foot-final .wrap{display:flex;flex-direction:column;gap:14px}
+.foot-final .ttl{font-weight:900;font-size:20px;color:#fff;display:flex;align-items:center;gap:9px}
+.foot-final p{font-size:13px;line-height:1.7;max-width:760px;color:#9fc0cf}
+.foot-final .link{color:var(--sun);font-weight:700;word-break:break-all}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;
+  font-weight:700;font-size:14px;padding:13px 20px;border-radius:13px;box-shadow:var(--sh-lg);z-index:200;opacity:0;
+  transition:.3s;pointer-events:none;display:flex;align-items:center;gap:9px}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+[data-go]{cursor:pointer}
+section[id]{scroll-margin-top:84px}
+.cf-legend{display:flex;gap:18px;flex-wrap:wrap;margin:2px 0 14px;font-size:13px;color:var(--ink2)}
+.cf-legend>span{display:inline-flex;align-items:center;gap:6px}
+.pill{display:inline-flex;align-items:center;font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px;line-height:1.7;white-space:nowrap}
+.pill.k{background:var(--foam2);color:#0c6b75}
+.pill.m{background:var(--sand);color:#9a6b00}
+.pill.p{background:#fff0e9;color:var(--coral-d)}
+.cf-call{display:flex;gap:13px;background:linear-gradient(135deg,var(--sand),#fff);border:1px solid var(--sun);border-radius:var(--r-md);padding:14px 16px;margin-bottom:16px;box-shadow:var(--sh-sm)}
+.cf-call .ci{font-size:22px;flex:none}
+.cf-call b{color:var(--coral-d)}
+.qa{border:1px solid var(--line);border-radius:var(--r-sm);padding:11px 14px;margin:11px 0;background:var(--card);box-shadow:var(--sh-sm)}
+.qa:first-child{margin-top:2px}
+.qa .q{font-weight:800;color:var(--ink);font-size:14.5px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.qa .q .qx{flex:1 1 60%;min-width:200px}
+.qa .ln{font-size:13.5px;color:var(--ink2);margin-top:7px;line-height:1.65}
+.qa .ln b{color:var(--ink)}
+.qa .ln .lbl{display:inline-block;font-weight:800;font-size:10.5px;padding:1px 6px;border-radius:6px;margin-right:6px}
+.lbl.lk{background:var(--foam2);color:#0c6b75}
+.lbl.lm{background:var(--sand);color:#9a6b00}
+.lbl.lp{background:#fff0e9;color:var(--coral-d)}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="wrap nav-in">
+    <div class="brand"><span class="dot">🚢</span>康匠郵輪之旅</div>
+    <div class="nav-links" id="navLinks">
+      <a data-go="overview">行程</a>
+      <a data-go="daily">每日</a>
+      <a data-go="ship">郵輪</a>
+      <a data-go="dining">餐食</a>
+      <a data-go="cost">費用</a>
+      <a data-go="notes">注意</a>
+      <a data-go="confirm">確認</a>
+      <a data-go="discuss">討論區</a>
+    </div>
+    <a data-go="discuss" class="nav-cta">🗺️ 一起選景點</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="wrap hero-in">
+    <span class="hero-badge">🌊 台灣康匠製造 · 115 年員工旅遊</span>
+    <h1>佐世保 × 釜山<br><span class="hl">六天五夜郵輪之旅</span></h1>
+    <p class="hero-sub">搭乘亞洲最大旗艦郵輪 MSC 榮耀號 Bellissima，一覺醒來就到下一個國家。日本＋韓國，吃住玩全包，岸上還能自由行！</p>
+
+    <div class="hero-meta">
+      <span class="chip">📅 <b>2026.07.25–07.30</b></span>
+      <span class="chip">⚓ 基隆港出發</span>
+      <span class="chip">🗾 日本佐世保 · 🇰🇷 韓國釜山</span>
+      <span class="chip">🛳️ <b>17.2 萬噸</b>／19 層甲板</span>
+    </div>
+
+    <div class="hero-btns">
+      <a data-go="overview" class="btn btn-primary">看完整行程 →</a>
+      <a data-go="discuss" class="btn btn-ghost">🗺️ 直接去討論區選景點</a>
+    </div>
+
+    <div class="count" id="countdown" aria-label="距離出發倒數">
+      <div class="cell"><div class="num" id="cd-d">–</div><div class="lab">天</div></div>
+      <div class="cell"><div class="num" id="cd-h">–</div><div class="lab">時</div></div>
+      <div class="cell"><div class="num" id="cd-m">–</div><div class="lab">分</div></div>
+      <div class="cell"><div class="num" id="cd-s">–</div><div class="lab">秒</div></div>
+    </div>
+  </div>
+
+  <!-- cute ship -->
+  <div class="ship-wrap" aria-hidden="true">
+    <svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8f1f6"/>
+        </linearGradient>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#fff5dc"/><stop offset="1" stop-color="#ffe6a6"/>
+        </linearGradient>
+      </defs>
+      <!-- sun -->
+      <circle cx="372" cy="70" r="40" fill="url(#sky)" opacity="0.9"/>
+      <!-- ship body -->
+      <g>
+        <!-- decks -->
+        <rect x="120" y="120" width="190" height="22" rx="6" fill="#fff"/>
+        <rect x="140" y="98" width="150" height="24" rx="6" fill="#f3f8fb"/>
+        <rect x="160" y="78" width="110" height="22" rx="6" fill="#fff"/>
+        <!-- funnels -->
+        <rect x="180" y="56" width="20" height="26" rx="5" fill="#123a5e"/>
+        <rect x="210" y="56" width="20" height="26" rx="5" fill="#1597a5"/>
+        <rect x="240" y="62" width="16" height="20" rx="4" fill="#ff6f5e"/>
+        <!-- hull -->
+        <path d="M70 142 H360 L335 196 Q330 206 318 206 H112 Q100 206 95 196 Z" fill="url(#hull)" stroke="#dfeaf0"/>
+        <!-- blue stripe -->
+        <path d="M82 168 H348 L341 182 H88 Z" fill="#28c2d2" opacity="0.85"/>
+        <!-- portholes -->
+        <g fill="#bfe1ec">
+          <circle cx="120" cy="155" r="5"/><circle cx="145" cy="155" r="5"/><circle cx="170" cy="155" r="5"/>
+          <circle cx="195" cy="155" r="5"/><circle cx="220" cy="155" r="5"/><circle cx="245" cy="155" r="5"/>
+          <circle cx="270" cy="155" r="5"/><circle cx="295" cy="155" r="5"/><circle cx="320" cy="155" r="5"/>
+        </g>
+        <!-- windows -->
+        <g fill="#cfe7f0"><rect x="150" y="104" width="14" height="11" rx="3"/><rect x="172" y="104" width="14" height="11" rx="3"/>
+          <rect x="194" y="104" width="14" height="11" rx="3"/><rect x="216" y="104" width="14" height="11" rx="3"/>
+          <rect x="238" y="104" width="14" height="11" rx="3"/><rect x="260" y="104" width="14" height="11" rx="3"/></g>
+        <text x="215" y="195" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="15" fill="#123a5e">MSC</text>
+      </g>
+    </svg>
+  </div>
+
+  <!-- waves -->
+  <div class="waves" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" width="200%" class="wave-move" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C180,80 360,0 540,40 C720,80 900,0 1080,40 C1260,80 1440,10 1440,40 L1440,90 L0,90 Z" fill="#1c9fb2" opacity="0.5"/>
+      <path d="M0,55 C180,90 360,20 540,55 C720,90 900,20 1080,55 C1260,90 1440,30 1440,55 L1440,90 L0,90 Z" fill="#28c2d2" opacity="0.45"/>
+    </svg>
+  </div>
+  <div class="hero-fade"></div>
+</header>
+
+<!-- ===== OVERVIEW / TIMELINE ===== -->
+<section class="section" id="overview">
+  <div class="wrap">
+    <span class="eyebrow">Itinerary 行程總覽</span>
+    <h2 class="h2">六天五夜，這樣玩 🗓️</h2>
+    <p class="lead">兩個海上巡航日盡情玩設施，兩個靠港日（佐世保 & 釜山）我們<b>自由行</b> — 想去哪先到下面討論區各自新增吧！</p>
+
+    <div class="tl">
+      <div class="tl-card"><div class="day">DAY 1</div><div class="date">7/25</div><div class="dow">星期六</div>
+        <span class="ic">⚓</span><div class="port">基隆港 登船</div><div class="time"><span>17:00</span> 啟航</div></div>
+      <div class="tl-card sea"><div class="day">DAY 2</div><div class="date">7/26</div><div class="dow">星期日</div>
+        <span class="ic">🌊</span><div class="port">海上巡航</div><div class="time">玩好玩滿一整天</div></div>
+      <div class="tl-card freeday"><div class="day">DAY 3</div><div class="date">7/27</div><div class="dow">星期一</div>
+        <span class="ic">⛩️</span><div class="port">日本 佐世保</div><div class="time">抵 <span>09:30</span> ／ 離 <span>20:00</span></div></div>
+      <div class="tl-card freeday"><div class="day">DAY 4</div><div class="date">7/28</div><div class="dow">星期二</div>
+        <span class="ic">🏯</span><div class="port">韓國 釜山</div><div class="time">抵 <span>07:00</span> ／ 離 <span>17:00</span></div></div>
+      <div class="tl-card sea"><div class="day">DAY 5</div><div class="date">7/29</div><div class="dow">星期三</div>
+        <span class="ic">🌅</span><div class="port">海上巡航</div><div class="time">放空 · 看秀 · 泡池</div></div>
+      <div class="tl-card"><div class="day">DAY 6</div><div class="date">7/30</div><div class="dow">星期四</div>
+        <span class="ic">🏡</span><div class="port">基隆港 返航</div><div class="time"><span>08:00</span> 抵達</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DAILY ===== -->
+<section class="section" id="daily" style="background:linear-gradient(180deg,#fff,var(--paper));">
+  <div class="wrap">
+    <span class="eyebrow">Day by Day 每日行程</span>
+    <h2 class="h2">點開看每一天 👇</h2>
+    <p class="lead">餐食、亮點、注意事項都整理好了。點標題展開細節。</p>
+    <div class="days" id="daysAcc"></div>
+  </div>
+</section>
+
+<!-- ===== SHIP ===== -->
+<section class="section" id="ship">
+  <div class="wrap">
+    <span class="eyebrow">On Board 郵輪亮點</span>
+    <h2 class="h2">榮耀號上必玩必拍 🛳️</h2>
+    <p class="lead">2019 年下水的超新郵輪，19 層樓像座海上度假村。<span class="tag tag-free">免費</span> 設施玩到飽，<span class="tag tag-paid">自費</span> 體驗看心情加購。</p>
+    <div class="grid g3" id="shipGrid"></div>
+  </div>
+</section>
+
+<!-- ===== DINING ===== -->
+<section class="section" id="dining" style="background:linear-gradient(180deg,#fff,var(--paper));">
+  <div class="wrap">
+    <span class="eyebrow">Dining 船上餐食</span>
+    <h2 class="h2">吃這件事，船上全包 🍽️</h2>
+    <p class="lead">主餐廳和自助餐廳通通免費、品質還不錯（有機會遇到龍蝦日 🦞）；想升級享受再選付費餐廳。</p>
+
+    <div class="grid g2">
+      <div class="feat">
+        <div class="fic">🆓</div>
+        <h3>免費餐廳 <span class="tag tag-free">不用加錢</span></h3>
+        <p><b>15 樓自助餐廳（Marketplace）</b>：全天供應、座位自由，也是全船唯一可免費裝咖啡茶水的地方。<br>
+        <b>主餐廳（櫻桃／海王等）</b>：晚餐有指定時段與桌號，看船卡背面別跑錯。<br>
+        🦞 <b>龍蝦日</b>：菜單一兩天前公布在 App，看到當天可免費點、還能加點！</p>
+      </div>
+      <div class="feat">
+        <div class="fic">⭐</div>
+        <h3>付費特色餐廳 <span class="tag tag-paid">自費</span></h3>
+        <p>想吃更精緻就加購：<b>壽司吧、鐵板燒、美式牛排、墨西哥餐廳</b>，還有義式手工冰淇淋 Gelato。<br>
+        💡 一上船就先去平板或 App 預約熱門餐廳與表演，晚了會搶不到。<br>
+        💧 省錢小撇步：自備保溫水壺，到 15 樓自助餐廳補水（先裝杯再倒入瓶比較衛生）。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COST ESTIMATOR ===== -->
+<section class="section" id="cost">
+  <div class="wrap">
+    <span class="eyebrow">Budget 費用估算</span>
+    <h2 class="h2">船上 ＋ 下船自費，抓個預算 🧮</h2>
+    <p class="lead">團費和補助看公司回條就好，這裡幫你估「<b>船上額外消費</b>」和「<b>下船自由行/岸上行程</b>」。拉一拉、選一選，下面即時算總額。</p>
+
+    <div class="calc">
+      <!-- left: inputs -->
+      <div class="panel">
+        <div class="calc-tabs">
+          <button class="on" data-ctab="onboard" onclick="switchCalc('onboard')">🛳️ 船上自費</button>
+          <button data-ctab="offship" onclick="switchCalc('offship')">🗺️ 下船自費</button>
+        </div>
+
+        <!-- ONBOARD -->
+        <div id="ctab-onboard">
+          <div class="field">
+            <label>📶 船上上網 WiFi</label>
+            <div class="seg" id="seg-wifi">
+              <button data-v="none" class="on" onclick="setSeg('wifi','none',0)">不買網路<span class="px">NT$0</span></button>
+              <button data-v="browse" onclick="setSeg('wifi','browse',2200)">瀏覽方案<span class="px">~NT$2,200</span></button>
+              <button data-v="stream" onclick="setSeg('wifi','stream',5900)">串流方案<span class="px">~NT$5,900</span></button>
+            </div>
+            <div class="hint">免費內網只能用 MSC App（看日報、預約、同房聊天），連不上外網。付費為 Starlink 衛星網路，全程不限流量。多裝置一起買、事先在 App 買約 8 折更劃算；台灣包船多半要上船才買。<b>實際以船上公告為準。</b></div>
+          </div>
+
+          <div class="field">
+            <label>🥤 飲料暢飲套餐</label>
+            <div class="seg" id="seg-drink">
+              <button data-v="none" class="on" onclick="setSeg('drink','none',0)">不買套餐<span class="px">NT$0</span></button>
+              <button data-v="soft" onclick="setSeg('drink','soft',5500)">軟飲套餐<span class="px">~NT$5,500</span></button>
+              <button data-v="alcohol" onclick="setSeg('drink','alcohol',9500)">酒水套餐<span class="px">~NT$9,500</span></button>
+            </div>
+            <div class="hint">單點飲料偏貴又加服務費。套餐須買整個航程、同房須同方案、未滿 18 歲限軟飲。若已選「禮遇陽台暢飲房」則房型已內含、這裡選不買即可。價格以美金日計、實際以船上為準。</div>
+          </div>
+
+          <div class="field">
+            <label>🍣 付費特色餐廳（次數）</label>
+            <div class="numrow">
+              <div class="stepper">
+                <button onclick="stepDine(-1)">−</button>
+                <span class="v" id="dineV">0</span>
+                <button onclick="stepDine(1)">＋</button>
+              </div>
+              <span class="hint" style="margin:0">每次每人約
+                <span class="priceinput" style="height:36px"><span>NT$</span><input id="dineUnit" type="number" value="1200" min="0" step="100" oninput="renderTotal()"></span>
+              </span>
+            </div>
+            <div class="hint">壽司吧／鐵板燒／牛排等，約 US$20–50／人。免費餐廳其實就很夠吃，這個看心情。</div>
+          </div>
+
+          <div class="field">
+            <label>🎰 其他船上消費（自由抓）</label>
+            <div class="numrow">
+              <span class="priceinput"><span>NT$</span><input id="extraOnboard" type="number" value="1000" min="0" step="100" oninput="renderTotal()"></span>
+              <span class="hint" style="margin:0">冰淇淋／酒吧零點／SPA／賭場／紀念照…抓個零用</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>💴 郵輪小費</label>
+            <div class="hint" style="margin-top:0;background:#f3fbf6;border-radius:11px;padding:11px 13px;color:#159b6b;font-weight:700">
+              ✅ 依公司回條：報價<b>已包含郵輪服務費及日本觀光稅</b>，不需另外付小費。<br>
+              <span style="color:var(--ink2);font-weight:600">（一般 MSC 約 US$18／人／晚，本團已含，不用擔心。）</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- OFFSHIP -->
+        <div id="ctab-offship" style="display:none">
+          <div style="background:var(--foam);border-radius:13px;padding:12px 14px;font-size:13.5px;font-weight:700;color:var(--ink2);margin-bottom:6px">
+            🗓️ 兩個靠港日各自選玩法：不下船 / 自己自由行 / 報名官方岸上行程
+          </div>
+
+          <!-- saseho -->
+          <div class="field">
+            <label>⛩️ DAY 3 · 佐世保（抵 09:30 / 離 20:00）</label>
+            <div class="seg" id="seg-saseho">
+              <button data-v="none" onclick="setOff('saseho','none')">不下船<span class="px">NT$0</span></button>
+              <button data-v="free" class="on" onclick="setOff('saseho','free')">自由行<span class="px">自抓</span></button>
+              <button data-v="tour" onclick="setOff('saseho','tour')">官方行程<span class="px">看下方</span></button>
+            </div>
+            <div id="saseho-free" class="numrow" style="margin-top:12px">
+              <span class="priceinput"><span>NT$</span><input id="sasehoFree" type="number" value="3400" min="0" step="100" oninput="renderTotal()"></span>
+              <span class="hint" style="margin:0">交通＋午餐＋門票＋購物粗估／人</span>
+            </div>
+            <div id="saseho-tour" style="display:none;margin-top:12px">
+              <select class="tour-sel" id="sasehoTourSel" onchange="renderTotal()">
+                <option value="a">九十九島(二選一) → 有田陶瓷 → 免稅店 → 佐世保五番街</option>
+                <option value="b">豪斯登堡 → 有田陶瓷 → 免稅店</option>
+              </select>
+              <div class="sizetoggle" id="size-saseho">
+                <button class="on" onclick="setSize('saseho','over')">滿 30 人</button>
+                <button onclick="setSize('saseho','under')">未滿 30 人</button>
+              </div>
+            </div>
+            <div class="hint">自由行亮點：九十九島展望台、商店街、佐世保漢堡、五番街。岸上官方行程經報名確認後不可退、需達人數才成團；6 歲以下每位減 600 元。</div>
+          </div>
+
+          <!-- busan -->
+          <div class="field">
+            <label>🏯 DAY 4 · 釜山（抵 07:00 / 離 17:00）</label>
+            <div class="seg" id="seg-busan">
+              <button data-v="none" onclick="setOff('busan','none')">不下船<span class="px">NT$0</span></button>
+              <button data-v="free" class="on" onclick="setOff('busan','free')">自由行<span class="px">自抓</span></button>
+              <button data-v="tour" onclick="setOff('busan','tour')">官方行程<span class="px">看下方</span></button>
+            </div>
+            <div id="busan-free" class="numrow" style="margin-top:12px">
+              <span class="priceinput"><span>NT$</span><input id="busanFree" type="number" value="4300" min="0" step="100" oninput="renderTotal()"></span>
+              <span class="hint" style="margin:0">交通(含天空膠囊)＋午餐＋門票＋咖啡＋購物粗估／人</span>
+            </div>
+            <div id="busan-tour" style="display:none;margin-top:12px">
+              <select class="tour-sel" id="busanTourSel" onchange="renderTotal()">
+                <option value="a">海雲台天空膠囊 → 青沙浦天空步道 → 甘川文化村 → 光復洞時尚街</option>
+                <option value="b">海雲台天空膠囊 → 廣安里咖啡街 → 五六島天空步道 → BIFF 廣場</option>
+              </select>
+              <div class="sizetoggle" id="size-busan">
+                <button class="on" onclick="setSize('busan','over')">滿 30 人</button>
+                <button onclick="setSize('busan','under')">未滿 30 人</button>
+              </div>
+            </div>
+            <div class="hint">⚠️ 釜山 <b>17:00 就離港</b>，比佐世保早，自由行記得抓緊、約離港前 1 小時回船。6 歲以下每位減 900 元。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right: total -->
+      <div class="total">
+        <h3>💰 每人預估自費</h3>
+        <div class="big" id="perTotal">NT$0 <small>/ 人</small></div>
+        <div class="per">船上消費以美金計，約 1 USD ≈ NT$31.5</div>
+
+        <div class="brk" id="breakdown"></div>
+
+        <div class="paxbox">
+          <span class="lab">👥 一起去幾人</span>
+          <div class="stepper">
+            <button onclick="stepPax(-1)">−</button>
+            <span class="v" id="paxV">2</span>
+            <button onclick="stepPax(1)">＋</button>
+          </div>
+        </div>
+        <div class="group-total" id="groupTotal"></div>
+
+        <div class="disc">※ 以上為估算，僅供討論抓預算用。WiFi／飲料／餐廳價格會因航線天數、裝置數、是否事先預購而異，<b>一律以郵輪公司現場公告為準</b>。岸上官方行程價格依公司回條。</div>
+      </div>
+    </div>
+
+    <!-- fold: 團費補助 reference -->
+    <div class="fold" id="foldFee">
+      <div class="fold-h" onclick="toggleFold('foldFee')">
+        <span>📋</span>（參考）公司團費與補助對照表
+        <span class="arr">⌄</span>
+      </div>
+      <div class="fold-c">
+        <div class="pad">
+          <p style="font-size:13.5px;color:var(--ink2);margin-bottom:13px">以下為公司回條資料，方便大家挑房型。報價含郵輪服務費及日本觀光稅；12 歲以下不論佔床不佔床與大人同價；船上網路自費。</p>
+          <p style="font-weight:800;font-size:14px;margin-bottom:8px">個人團費（依房型 ／ 同住人數）</p>
+          <div class="tblwrap" style="margin-bottom:18px">
+            <table>
+              <thead><tr><th>房型</th><th>兩人房</th><th>三人房</th><th>四人房</th></tr></thead>
+              <tbody>
+                <tr><td>內艙房</td><td class="tnum">31,380</td><td class="tnum">25,213</td><td class="tnum">22,130</td></tr>
+                <tr><td>遮蔽海景房</td><td class="tnum">31,380</td><td>—</td><td>—</td></tr>
+                <tr><td>海景房</td><td class="tnum">38,380</td><td class="tnum">30,547</td><td>—</td></tr>
+                <tr><td>豪華海景房</td><td class="tnum">41,380</td><td class="tnum">32,547</td><td>—</td></tr>
+                <tr><td>遮蔽陽台房</td><td class="tnum">32,380</td><td class="tnum">27,547</td><td class="tnum">25,130</td></tr>
+                <tr><td>陽台房</td><td class="tnum">42,380</td><td class="tnum">34,213</td><td class="tnum">30,130</td></tr>
+                <tr class="hl-row"><td>禮遇陽台暢飲房</td><td class="tnum">47,380</td><td class="tnum">38,880</td><td class="tnum">34,630</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-weight:800;font-size:14px;margin-bottom:8px">員工補助（年資／職務 結算至 115 年 6 月底）</p>
+          <div class="tblwrap">
+            <table>
+              <thead><tr><th>對象</th><th>補助（每人）</th></tr></thead>
+              <tbody>
+                <tr><td>經理級</td><td class="tnum">44,260</td></tr>
+                <tr><td>副理、副廠長</td><td class="tnum">33,195</td></tr>
+                <tr><td>3 年以上</td><td class="tnum">22,130</td></tr>
+                <tr><td>1 年以上，3 年以下</td><td class="tnum">11,065</td></tr>
+                <tr><td>3 個月以上，1 年以下</td><td class="tnum">8,000</td></tr>
+                <tr><td>未滿 3 個月</td><td class="tnum">0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOTES ===== -->
+<section class="section" id="notes" style="background:linear-gradient(180deg,#fff,var(--paper));">
+  <div class="wrap">
+    <span class="eyebrow">Good to Know 注意事項</span>
+    <h2 class="h2">出發前一定要知道的事 📌</h2>
+    <p class="lead">整理自公司行程表＋實際搭乘心得。最重要的一句話：<span class="star">護照影本記得印 2 份！</span></p>
+    <div class="acc" id="notesAcc"></div>
+
+    <!-- checklist -->
+    <div class="checklist">
+      <h3>🧳 行前準備清單（可勾選）</h3>
+      <div class="bar"><i id="clBar"></i></div>
+      <div class="barlab" id="clLab">完成 0／0</div>
+      <div class="cl-grid" id="clGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONFIRM CHECKLIST ===== -->
+<section class="section" id="confirm" style="background:linear-gradient(180deg,#fff,var(--paper));">
+  <div class="wrap">
+    <span class="eyebrow">Ask the Agency 報名前 Q&A</span>
+    <h2 class="h2">要跟旅行社確認的事 ✅</h2>
+    <p class="lead">整理自我們的確認清單。已知的先寫上、我再幫忙查證補充，<span class="star">黃色「待旅行社」</span>就是還要等正式回覆的項目；最終都以旅行社說明會公告為準。</p>
+    <div class="cf-legend">
+      <span><span class="pill k">已知</span>行程／截圖已確認</span>
+      <span><span class="pill m">我查的</span>查證補充的一般做法</span>
+      <span><span class="pill p">待旅行社</span>還要等旅行社回覆</span>
+    </div>
+    <div class="cf-call">
+      <span class="ci">⏰</span>
+      <div><b>自由行回港時間（最重要）</b>：釜山 07:00 抵達、<b>17:00 離港</b>，旅行社說約 9 點多下船、建議買中午左右的票、至少提前半小時排隊上船 → 我們先抓 <b>15:30–16:00 回港</b>；佐世保 09:30 抵達、<b>20:00 離港</b> → 先抓 <b>18:30–19:00 回港</b>。記得到下面「討論區」各自把想去的點丟上來一起排。</div>
+    </div>
+    <div class="acc" id="confirmAcc"></div>
+  </div>
+</section>
+
+<!-- ===== DISCUSSION ===== -->
+<section class="section" id="discuss">
+  <div class="wrap">
+    <div class="disc-hero">
+      <span class="eyebrow">⭐ 重點功能 · 一起選景點</span>
+      <h2>佐世保 & 釜山 自由行討論區</h2>
+      <p>兩天靠港我們自己玩！先各自把「想去的點」新增進來，朋友打開同一個頁面就能看到彼此的清單，再一起投票決定路線 👍</p>
+
+      <!-- name gate -->
+      <div class="namegate" id="nameGate">
+        <input id="nameInput" type="text" placeholder="輸入你的暱稱（例：Erin）" maxlength="12" onkeydown="if(event.key==='Enter')saveName()">
+        <button onclick="saveName()">進入討論區 →</button>
+      </div>
+      <div class="whoami" id="whoAmI" style="display:none"></div>
+    </div>
+
+    <div class="board">
+      <!-- port tabs -->
+      <div class="port-tabs">
+        <button class="on" id="ptab-saseho" onclick="switchPort('saseho')">
+          <span class="flag">⛩️</span>
+          <span>佐世保<span class="meta"> · DAY 3 · 09:30–20:00</span></span>
+        </button>
+        <button id="ptab-busan" onclick="switchPort('busan')">
+          <span class="flag">🏯</span>
+          <span>釜山<span class="meta"> · DAY 4 · 07:00–17:00</span></span>
+        </button>
+      </div>
+
+      <!-- ideas -->
+      <div class="ideas">
+        <div class="il">💡 沒靈感？點一下加入你的清單（之後可以投票）</div>
+        <div class="chips" id="ideaChips"></div>
+      </div>
+
+      <!-- add form -->
+      <div class="addform">
+        <div class="ttl">➕ 新增我想去的景點</div>
+        <div class="frow two">
+          <input class="inp" id="spotName" type="text" placeholder="景點 / 店名（必填）" maxlength="40">
+          <input class="inp" id="spotCost" type="text" placeholder="預估花費（選填，例：₩30,000）" maxlength="24">
+        </div>
+        <div class="catpick" id="catPick"></div>
+        <textarea class="inp" id="spotNote" placeholder="想去的理由 / 備註（選填，例：拍照超美、想吃海鮮）" maxlength="160"></textarea>
+        <input class="inp" id="spotMap" type="text" placeholder="Google 地圖連結（選填）" style="margin-top:10px" maxlength="300">
+        <button class="addbtn" onclick="addSpot()">＋ 加進討論區</button>
+      </div>
+
+      <!-- sort + list -->
+      <div class="sortrow">
+        <div class="cnt">共 <b id="spotCount">0</b> 個景點</div>
+        <button class="refresh" onclick="refreshSpots(true)">🔄 重新整理</button>
+        <div class="sp">
+          <button class="on" id="sort-votes" onclick="setSort('votes')">最多人想去</button>
+          <button id="sort-new" onclick="setSort('new')">最新</button>
+        </div>
+      </div>
+
+      <div class="spots" id="spotList"></div>
+
+      <div class="storage-note" id="storageNote">
+        <span>💾</span>
+        <span id="storageMsg">景點會自動儲存，把這個頁面分享給朋友，大家開啟後就能看到彼此新增的景點。</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="foot-final">
+  <div class="wrap">
+    <div class="ttl">🚢 一起期待這趟旅程！</div>
+    <p>本頁由行程資料＋公開網路資訊整理製作，方便大家討論。郵輪設施、餐廳、上網／飲料方案、價格與靠港時間，<b>一律以郵輪公司現場公告與公司正式說明會資料為準</b>；費用為估算僅供參考。岸上行程是否成團依報名人數而定。</p>
+    <p>MSC 榮耀號 Bellissima 官方介紹（電子書）：<span class="link">https://msc-cruises.com.tw/E-book/</span></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<!-- Firebase SDKs (Compat 版) -->
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-database-compat.js"></script>
+
+<script>
+/* =========================================================
+   Firebase 設定區 (已填入您的專案金鑰)
+========================================================= */
+const firebaseConfig = {
+  apiKey: "AIzaSyA-5RGAX7EXzyzwxnJX1v3dtvEpRpUG9Tc",
+  authDomain: "cruise-115.firebaseapp.com",
+  projectId: "cruise-115",
+  storageBucket: "cruise-115.firebasestorage.app",
+  messagingSenderId: "28336659236",
+  appId: "1:28336659236:web:075060d7aac2ea15afb1b1",
+  databaseURL: "https://cruise-115-default-rtdb.asia-southeast1.firebasedatabase.app" // 優先匹配推薦的新加坡地區
+};
+
+/* =========================================================
+   DATA
+========================================================= */
+const RATE = 31.5; // NT$ per USD (約)
+
+const DAYS = [
+  { n:1, date:"7/25", dow:"星期六", icon:"⚓", title:"基隆港登船", sub:"MSC 榮耀號 啟航",
+    time:"啟航 20:00 前", arr:"", dep:"17:00",
+    meals:["早 自理","午 下午茶(15F自助)","晚 郵輪"],
+    pts:["亞洲最大旗艦郵輪於基隆西岸碼頭啟航","登船手續＋全船安全演習後鳴笛出海","上船 4 件事：①門口拿船卡 ②連內網下載 MSC App ③綁信用卡啟用船卡 ④預約劇院秀與付費餐廳"], free:false },
+  { n:2, date:"7/26", dow:"星期日", icon:"🌊", title:"海上巡航", sub:"全天船上自由活動",
+    time:"全天海上", arr:"", dep:"",
+    meals:["早 郵輪","午 郵輪","晚 郵輪"],
+    pts:["翻開每日活動表，設施玩到飽","水晶旋梯、80 米 LED 天幕、泳池、健身房、SPA","晚上倫敦大劇院秀＋天幕光影秀＋主題派對","甲板散步迎晨曦，純歐式度假氛圍"], free:false },
+  { n:3, date:"7/27", dow:"星期一", icon:"⛩️", title:"日本 佐世保", sub:"自由行 · 今日岸上自費自理", port:"saseho",
+    time:"", arr:"09:30", dep:"20:00",
+    meals:["早 郵輪","午 自理／船上","晚 自理／船上"],
+    pts:["九州西北的美式風情港都，異國情調滿滿","必看：九十九島展望台與遊覽船（西海國立公園）","逛街：日本最長的四ヶ町商店街、海港旁佐世保五番街","名物：佐世保漢堡 🍔；也可選一整天的豪斯登堡"], free:true },
+  { n:4, date:"7/28", dow:"星期二", icon:"🏯", title:"韓國 釜山", sub:"自由行 · 今日岸上自費自理", port:"busan",
+    time:"", arr:"07:00", dep:"17:00",
+    meals:["早 郵輪","午 自理／船上","晚 自理／船上"],
+    pts:["韓國第二大城、活力海濱都會，物價親民","必拍：甘川文化村（韓國馬丘比丘）、海雲台天空膠囊列車","海景步道：青沙浦 SKY WALK、五六島天空步道","美食：札嘎其市場海鮮、BIFF 廣場辣炒年糕／街頭小吃","⚠️ 17:00 就離港，比較早，自由行記得抓緊回船"], free:true },
+  { n:5, date:"7/29", dow:"星期三", icon:"🌅", title:"海上巡航", sub:"放鬆 · 看秀 · 購物",
+    time:"全天海上", arr:"", dep:"",
+    meals:["早 郵輪","午 郵輪","晚 郵輪"],
+    pts:["航行於東海海域，悠閒享受最後的海上時光","榮耀大道 200＋ 國際品牌、LED 天幕拍照打卡","施華洛世奇水晶旋梯（61,440 顆水晶）必拍","夜晚表演秀、各式風格酒吧小酌"], free:false },
+  { n:6, date:"7/30", dow:"星期四", icon:"🏡", title:"基隆港 返航", sub:"愉快的旅程畫下句點",
+    time:"抵達 08:00", arr:"08:00", dep:"",
+    meals:["早 郵輪","午 溫暖的家","晚 溫暖的家"],
+    pts:["榮耀號返抵基隆港","前一晚（上岸前至少 3 小時）先結清船上消費帳單","託運行李前一晚 23:00 前貼好行李條放門外","領回護照、確認帳單，依梯次依序下船"], free:false }
+];
+
+const SHIP = [
+  { ic:"💎", t:"施華洛世奇水晶旋梯", tag:"free", d:"61,440 顆奧地利水晶、義大利工匠手工打造，橫跨 5–7 樓。公認最美拍照點，建議早上 7–8 點去拍空景！" },
+  { ic:"✨", t:"榮耀大道 × 80 米 LED 天幕", tag:"free", d:"貫穿船中段的室內購物街，1.4 億顆 LED 燈泡打造的天幕秀不時變換星空、海底世界，傍晚還有光影秀。" },
+  { ic:"🛝", t:"亞利桑那水上樂園", tag:"free", d:"3 條繽紛滑水道＋82 米喜馬拉雅橋，免費免預約，穿好泳衣帶毛巾就能衝（戶外設施視天氣開放）。" },
+  { ic:"🏊", t:"大峽谷泳池 & 按摩池", tag:"free", d:"15 樓室內泳池有透明天幕引自然光、不吹風超舒服；多座戶外 jacuzzi 邊泡邊看海。" },
+  { ic:"🎭", t:"倫敦大劇院 表演秀", tag:"free", d:"媲美百老匯的音樂劇、舞蹈、魔術、現場演唱，每晚不同主題。記得先用 App／平板預約場次。" },
+  { ic:"🏎️", t:"4D 賽車 · VR 迷宮 · 保齡球", tag:"paid", d:"16 樓遊戲天地：擬真 F1 賽車、VR 虛擬迷宮、保齡球、電玩。多人可合資買 Fun Pass 較劃算。" },
+  { ic:"🎰", t:"賭場 Casino", tag:"paid", d:"以拉斯維加斯為靈感、還有 VIP 房，想試手氣可以來；另有賓果遊戲（一張約 300 多元、頭獎超高）。" },
+  { ic:"💆", t:"峇里島風 SPA 水療", tag:"paid", d:"被《伯利茲郵輪指南》評為五大最佳郵輪 SPA 之一，160＋ 種身體臉部療程，專業理療師親理。" },
+  { ic:"🧸", t:"分齡兒童俱樂部", tag:"free", d:"與 LEGO、CHICCO 合作，0–17 歲分 5 組、32＋ 免費活動。3–12 歲（已戒尿布）預約可免費托育一整天！" }
+];
+
+const NOTES = [
+  { ic:"🛂", t:"證件與通關", body:`<ul>
+    <li><span class="star">護照影本要印 2 份</span>（A4、1:1 比例、不可手機翻拍列印）：一份下船入境用、一份保險備用。</li>
+    <li>登船時護照正本會被統一收走，下船前才歸還；每次下船都要帶護照影本給當地海關查驗。</li>
+    <li>千萬別帶到舊護照或別人的護照！護照效期需 6 個月以上。</li>
+    <li>日本通關需護照影本＋海關申報單（下船前一晚送到房間，以家庭為單位填寫）。</li>
+    <li><span class="star">出發前先查線上入境申報</span>：郵輪靠港多由船方／旅行社統一辦理團體入境；若需個別申報，日本可先填 <b>Visit Japan Web</b>、韓國 2026 年起改用<b>電子入境卡 e‑Arrival</b>（台灣旅客觀光 90 天免簽、2026 年底前免 K‑ETA）。實際以說明會公告為準。</li></ul>` },
+  { ic:"🎫", t:"登船後先做這 4 件事", body:`<ul>
+    <li>① 到房門口拿你的<b>船卡</b>（掛在門把上，等同房卡＋身份證＋錢包）。</li>
+    <li>② 連上免費內網、下載並登入 <b>MSC for Me App</b>，開一個大家的群組。</li>
+    <li>③ 到 5／6 樓機台<b>綁信用卡或儲值現金</b>，船卡才正式啟用。</li>
+    <li>④ 立刻預約熱門的倫敦大劇院秀與付費餐廳。</li>
+    <li>安全演習：開航前約 45 分鐘看房內電視影片＋撥分機 881，再持卡到集合點刷卡完成。</li></ul>` },
+  { ic:"🧳", t:"行李規定", body:`<ul>
+    <li>每人 2 件託運（每件 ≤23kg）＋ 2 件手提；每房總計 ≤8 件／100kg。</li>
+    <li>託運前綁好行李吊牌（沒帶可現場手寫）；重要物品隨身帶，行李不一定何時送到房。</li>
+    <li>禁帶違禁品（刀具、熨斗等）。郵輪不像飛機限重，可盡情購物，但回台入境仍須遵守海關規定（不可帶肉類、水果）。</li></ul>` },
+  { ic:"📶", t:"船上網路", body:`<ul>
+    <li>免費內網只能用 App 看日報、預約、同房聊天，<b>連不上外網</b>。</li>
+    <li>付費 Starlink 衛星網路分「瀏覽」與「瀏覽＋串流」兩種，全程不限流量；多裝置一起買、事先買約 8 折。</li>
+    <li>台灣包船多半要上船後才能購買，價格以現場為準。</li>
+    <li>省錢做法：船上不用網路專心玩，下船當天再用日本／韓國 eSIM。</li></ul>` },
+  { ic:"🔌", t:"插座與電器", body:`<ul>
+    <li>艙房有 110V／220V，台灣雙扁插頭可直接用；圓頭插座需轉接頭。</li>
+    <li>插座數量不多，可帶 1–2 個分接插座；<b>船上禁延長線、吹風機、電湯匙</b>等高耗能電器。</li></ul>` },
+  { ic:"👗", t:"晚餐服裝（正裝之夜）", body:`<ul>
+    <li>每日日報會公告當晚 dress code（便服／非正式／正裝 Gala）。</li>
+    <li>建議帶一套正式服裝：男士西裝或襯衫皮鞋、女士套裝／小洋裝／禮服。</li>
+    <li>正裝之夜很適合到水晶旋梯拍照留念。</li></ul>` },
+  { ic:"🌊", t:"暈船", body:`<ul>
+    <li>大型郵輪相對穩，但遇海象差仍會搖晃；建議備暈船藥。</li>
+    <li>陽台房或船中段、低樓層通常感受較舒適。</li></ul>` },
+  { ic:"⏰", t:"靠港 & 回港時間", body:`<ul>
+    <li>每站靠港時間不同、以每日日報為準，<b>務必準時回船，郵輪不等人</b>，誤點產生的交通住宿費自負。</li>
+    <li>自由行建議在離港前約 1 小時回到碼頭（過安檢也要時間）。</li>
+    <li>本團：佐世保 09:30–20:00、釜山 07:00–17:00（釜山較早，注意！）。</li></ul>` },
+  { ic:"🛏️", t:"離船流程", body:`<ul>
+    <li>會收到「離船資訊表」（你的離船時段、集合時間地點）。</li>
+    <li>託運行李前一晚 23:00 前貼好行李條放門外。</li>
+    <li>確認帳單明細、領回護照；信用卡自動扣款、儲值現金多退少補。</li></ul>` },
+  { ic:"💴", t:"小費、稅金與結帳", body:`<ul>
+    <li>依公司回條：報價<b>已含郵輪服務費及日本觀光稅</b>，不需另付小費。</li>
+    <li>船上消費以美金計、刷船卡記帳，下船前一晚收到清單。</li>
+    <li>退稅可用護照影本辦理。</li></ul>` }
+];
+
+const CONFIRM = [
+  { ic:"🚌", t:"集合、交通與上下船", items:[
+    { q:"公司幾點集合、幾點發車？", lines:[
+      {t:"k",text:"去程、回程都從公司集合一起搭車到基隆港。"},
+      {t:"m",text:"17:00 啟航，建議全團 13:00–14:00 抵港；要預留車程＋報到＋行李托運＋排隊登船時間。"},
+      {t:"p",text:"請旅行社直接給「最終集合時間／發車時間」。"} ]},
+    { q:"家眷自行前往，要到哪個碼頭？地址、集合點、報到窗口？", lines:[
+      {t:"k",text:"部分家眷可能自行前往。"},
+      {t:"m",text:"榮耀號通常停靠基隆港「西岸旅客碼頭（西岸客運大樓／旅客服務中心）」，從基隆車站北站（港西街出口）步行約 10 分鐘；現場有 MSC 人員可協助印護照影本。基隆港分東岸／西岸兩個報到點。"},
+      {t:"p",text:"最終停靠東岸或西岸、確切報到窗口，以旅行社通知為準。"} ]},
+    { q:"自行前往者，最晚幾點前一定要到港完成報到？", lines:[
+      {t:"k",text:"基隆 17:00 啟航。"},
+      {t:"m",text:"郵輪一般要求啟航前 2–3 小時完成報到；建議抓 14:00 前到、最晚不晚於 15:00。"},
+      {t:"p",text:"請旅行社給明確的「建議到港時間」與「最晚報到時間」。"} ]},
+    { q:"行李怎麼處理？自己拿還是碼頭托運？", lines:[
+      {t:"m",text:"碼頭可托運，工作人員會送到房門口。每人 2 件托運（每件 ≤90×75×43cm、≤23kg）＋ 2 件手提（≤56×45×25cm、≤23kg）；每房合計 ≤8 件／100kg。護照、錢包、藥,行動電源、外套放隨身包，別托運。"},
+      {t:"p",text:"大件行李是否現場統一托運、有無集合托運點，請旅行社確認。"} ]},
+    { q:"登船卡／房卡在哪拿？誰帶大家辦理？", lines:[
+      {t:"m",text:"房卡會掛在各自房門上；上船第一天到 5／6 樓自助機台或櫃台綁信用卡才能啟用（5 樓人較少），賭場可用現金。"},
+      {t:"p",text:"是否有公司窗口／領隊統一帶辦，請確認。"} ]},
+    { q:"登船後有沒有午餐或下午茶？幾點開始？", lines:[
+      {t:"k",text:"行程表寫登船日午餐為郵輪下午茶。"},
+      {t:"m",text:"一般約下午 2 點多可先到 15 樓自助餐廳用餐。"},
+      {t:"p",text:"實際開放時間以船上每日資訊為準。"} ]},
+    { q:"自由行下船會不會分梯次、領號碼牌、排在岸上團後面？", lines:[
+      {t:"m",text:"會。報名官方岸上行程者可較早下船；自由行旅客需現場抽「下船梯次」，抽號還要提前約 1 小時排隊，最晚可能等到 16:15 才輪到。離船順序大致為：YC 套房 > 鑽石會員 > 團體岸上觀光 > 禮遇陽台暢飲房 > 自由行。"},
+      {t:"p",text:"本航次釜山／佐世保的實際下船梯次安排，請旅行社確認。"} ]},
+    { q:"7/30 回基隆，大約幾點能真正下船、幾點回公司？", lines:[
+      {t:"k",text:"7/30 08:00 抵達基隆。"},
+      {t:"m",text:"抵達不等於馬上網下船，需依下船梯次，通常 7–8 點起陸續下船。"},
+      {t:"p",text:"請旅行社給預估下船時間與回到公司的時間。"} ]},
+    { q:"回程家眷可以自行離開嗎？一起回公司在哪上車？", lines:[
+      {t:"k",text:"回程會從基隆港一起搭車回公司。"},
+      {t:"p",text:"家眷可否自行離開、上車地點，請確認。"} ]}
+  ]},
+  { ic:"🗺️", t:"自由行：佐世保・釜山", items:[
+    { q:"釜山：建議集合／回港時間到底幾點？", lines:[
+      {t:"k",text:"旅行社：07:00 抵達、17:00 啟航；預計約 9 點多下船（依現場為主）；至少提前半小時到港排隊上船。"},
+      {t:"m",text:"建議別拖到 16:30 才到，抓 15:30–16:00 回港較安全。"},
+      {t:"p",text:"請旅行社給「建議回港」與「最晚回港」的明確時間。"} ]},
+    { q:"釜山：自由行買票，幾點後的票比較安全？", lines:[
+      {t:"k",text:"旅行社建議買「中午左右」的票比較剛好；不要買一早／10 點前的票，避免卡在下船排隊。"} ]},
+    { q:"佐世保：實際下船、建議回港、最晚回港？", lines:[
+      {t:"k",text:"09:30 抵達、20:00 離港。"},
+      {t:"m",text:"若 20:00 離港，建議 18:30–19:00 回港。"},
+      {t:"p",text:"實際下船與最晚回港時間，請旅行社確認。"} ]},
+    { q:"下船要過日本／韓國海關嗎？要等多久？", lines:[
+      {t:"m",text:"抵達日本第一個港口，不論是否下船都要辦日本入境手續，通常需排隊查驗。"},
+      {t:"p",text:"韓國查驗方式與等候時間，請旅行社說明。"} ]},
+    { q:"自由行當天的緊急聯絡人是誰？電話／LINE／集合點？", lines:[
+      {t:"m",text:"建議出發前公告：領隊電話＋公司窗口＋港口集合點。"},
+      {t:"p",text:"待旅行社／公司提供。"} ]},
+    { q:"港口到市區的交通？有沒有接駁？", lines:[
+      {t:"p",text:"佐世保／釜山碼頭到市區的交通、是否有接駁車，請旅行社說明。"} ]},
+    { q:"上岸要帶哪些東西？", lines:[
+      {t:"m",text:"至少帶登船卡、護照影本、緊急聯絡卡、少量日圓／韓元；護照正本是否需帶看船方規定（多半正本會被收走）。"} ]}
+  ]},
+  { ic:"💳", t:"費用、付款與取消", items:[
+    { q:"訂金／尾款何時繳、繳給誰、怎麼付？", lines:[
+      {t:"k",text:"清單備註「回程繳納」。"},
+      {t:"p",text:"確切繳款時間、對象、方式，請旅行社確認。"} ]},
+    { q:"團費含哪些？還有沒有要再付的固定費用？", lines:[
+      {t:"k",text:"行程表：已含郵輪服務費（小費）、日本觀光稅；船上網路自購。"},
+      {t:"m",text:"一般郵輪服務費約每人每晚 USD14.5（本行程已含於團費，不需再付）。"},
+      {t:"p",text:"保險、領隊小費、港務費、岸上團費是否另計，請確認。"} ]},
+    { q:"船上消費是各自結算，還是公司統一事後結算？", lines:[
+      {t:"p",text:"請旅行社／公司確認結算方式（會影響是否要綁個人信用卡）。"} ]},
+    { q:"如果改港、延遲、取消靠港，有沒有退費或保險證明？", lines:[
+      {t:"m",text:"岸上自費團確認後多半不可取消；若因不可抗力取消靠港，費用通常由船上退回。"},
+      {t:"p",text:"旅行社是否協助開立延誤／取消證明，請確認。"} ]}
+  ]},
+  { ic:"📶", t:"網路與手機", items:[
+    { q:"船上 Wi-Fi 能不能提前買？去哪買？事前買比較便宜嗎？", lines:[
+      {t:"k",text:"船上網路需自費；想先在官網買，需要先拿到「客艙預定號碼」。"},
+      {t:"m",text:"MSC 網路套餐通常可在出發前透過官網／MSC For Me 預購（需訂位／客艙編號），事先買常比船上便宜；分「瀏覽」與「瀏覽＋串流」、全程不限流量、多裝置一起買更省。台灣包船有時需上船後才能買。"},
+      {t:"p",text:"本航次能否提前購買、價格與方案，請旅行社確認。"} ]},
+    { q:"海上巡航手機網路怎麼辦？要不要關漫遊？", lines:[
+      {t:"m",text:"建議關閉行動數據漫遊，避免連到海事衛星漫遊產生高額費用；只在靠港時用日／韓 eSIM。"} ]},
+    { q:"MSC For Me App 本航次適用嗎？要先下載嗎？", lines:[
+      {t:"m",text:"建議出發前先下載；上船連船上 Wi-Fi 後可查活動／餐廳時間、預約倫敦劇院表演、綁信用卡、與同行家人傳訊息。"},
+      {t:"p",text:"本航次使用方式，請旅行社確認。"} ]}
+  ]},
+  { ic:"🛳️", t:"船上生活", items:[
+    { q:"免費餐廳有哪些？用餐時間？自助餐開放時間？", lines:[
+      {t:"m",text:"含主餐廳（晚餐多分兩輪、約 17:00–20:00、看船卡背面梯次）與近全天候自助餐；另有付費特色餐廳。"},
+      {t:"p",text:"本航次各餐廳實際開放時間，以船上每日資訊為準。"} ]},
+    { q:"有免費飲水／熱水嗎？房間有熱水壺嗎？能帶水壺嗎？", lines:[
+      {t:"m",text:"自助餐廳有飲水／熱水可自行取用，可帶保溫水壺補水；房內是否附熱水壺依房型而異（標準房通常無）。"},
+      {t:"p",text:"房型是否附熱水壺，請確認。"} ]},
+    { q:"瓶裝水、飲料、咖啡茶要錢嗎？", lines:[
+      {t:"m",text:"自助餐廳的基本茶水多為免費；瓶裝水、現調飲料、酒類、特色咖啡多為付費（除非有飲料套餐）。"},
+      {t:"p",text:"細節以船上公告為準。"} ]},
+    { q:"房間備品有什麼？牙刷牙膏、拖鞋、洗髮沐浴、吹風機？", lines:[
+      {t:"m",text:"房內通常有吹風機、沐浴乳／洗髮乳、毛巾；牙刷、牙膏、拖鞋多半未提供，建議自備。"},
+      {t:"p",text:"確切備品，請旅行社確認。"} ]},
+    { q:"插座規格？要不要轉接頭？能不能帶延長線／多孔插座？", lines:[
+      {t:"m",text:"客艙多為 110V／220V，台灣雙扁插頭多可直接用、圓孔需轉接頭，插座數量少。郵輪對延長線／多孔插座（尤其含突波保護或過長線）通常限制嚴格，吹風機、電湯匙等高耗能電器禁帶。"},
+      {t:"p",text:"可否帶一般延長線，請旅行社確認。"} ]},
+    { q:"穿著有規定嗎？有正式晚宴或主題派對嗎？", lines:[
+      {t:"m",text:"每日日報會公告當晚 dress code（便服／非正式／正裝之夜）；建議帶一套正式服裝，正裝之夜很適合到水晶旋梯拍照。"},
+      {t:"p",text:"本航次主題派對安排，以船上公告為準。"} ]},
+    { q:"哪些東西不能帶上船？零食／泡麵／飲料／酒／小家電？", lines:[
+      {t:"m",text:"禁帶酒精飲料（自帶會被代管至下船歸還）、明火物品、熨斗、電湯匙等；少量零食通常可，但回台入境不可帶肉類、水果。"},
+      {t:"p",text:"細項以船公司規定為準。"} ]},
+    { q:"船上消費怎麼付？要綁信用卡嗎？沒信用卡怎麼辦？", lines:[
+      {t:"m",text:"全程刷船卡記帳，建議綁信用卡；沒有信用卡可到櫃台以美金現金儲值到船卡。"} ]},
+    { q:"最後一晚帳單怎麼結清？有問題找誰？", lines:[
+      {t:"k",text:"行程表：上岸前至少 3 小時前結清船上帳單。"},
+      {t:"m",text:"下船前一晚會收到帳單明細，綁卡者自動扣款、儲值現金者多退少補；有疑問到服務櫃台處理（下船後較難處理）。"} ]},
+    { q:"免稅店的酒，消費後可帶回房間喝嗎？", lines:[
+      {t:"m",text:"船上免稅店或岸上買的酒類，通常會由船方代為保管、到航程最後或下船時歸還，航程中多半不可在房內飲用。"},
+      {t:"p",text:"確切規定，請旅行社確認。"} ]}
+  ]},
+  { ic:"🛂", t:"證件與入境資料", items:[
+    { q:"日本／韓國入境資料要不要先填？旅行社會協助嗎？", lines:[
+      {t:"m",text:"抵達日本第一個港口都要辦日本入境；旅行社通常會發「日本入出境卡」、協助流程，並請大家備護照影本＋海關申報書。日本可先填 Visit Japan Web；韓國 2026 年起改用電子入境卡 e-Arrival（台灣旅客觀光 90 天免簽、2026 年底前免 K-ETA）。郵輪團體入境多由旅行社／船方統一協調。"},
+      {t:"p",text:"本航次是否需個別線上申報、旅行社是否代辦，請確認。"} ]}
+  ]}
+];
+
+const CHECKLIST = [
+  "護照正本（效期 6 個月以上）","🛂 護照影本 ×2 份（A4、1:1、勿翻拍）","登船證／船票",
+  "📱 下載 MSC for Me App＋開好友群組","一套正式服裝（正裝之夜）","暈船藥","個人藥品／保養品",
+  "泳衣＋毛巾（玩水樂園）","防曬乳、太陽眼鏡","轉接頭／1–2 分接插座（禁延長線、吹風機）",
+  "保溫水壺（自助餐廳補水）","信用卡（綁船卡）","少量現金：日幣／韓元","日本／韓國 eSIM 或網卡",
+  "隨身包（下船帶護照影本）","行李吊牌（碼頭託運）"
+];
+
+const CATS = [
+  { k:"food", label:"美食", emoji:"🍔", color:"#ef6b3f" },
+  { k:"sight", label:"景點", emoji:"📸", color:"#1597a5" },
+  { k:"shop", label:"購物", emoji:"🛍️", color:"#c0567f" },
+  { k:"cafe", label:"咖啡", emoji:"☕", color:"#9a6a3a" },
+  { k:"fun", label:"體驗", emoji:"🎡", color:"#7c63d8" },
+  { k:"other", label:"其他", emoji:"📍", color:"#5a7385" }
+];
+
+const IDEAS = {
+  saseho:[
+    {n:"九十九島展望台（弓張岳）",c:"sight"},{n:"九十九島遊覽船",c:"fun"},{n:"豪斯登堡",c:"fun"},
+    {n:"四ヶ町商店街",c:"shop"},{n:"佐世保五番街",c:"shop"},{n:"佐世保漢堡",c:"food"},
+    {n:"西海橋公園（漩渦）",c:"sight"},{n:"有田陶瓷公園",c:"sight"}
+  ],
+  busan:[
+    {n:"甘川文化村",c:"sight"},{n:"海雲台天空膠囊列車",c:"fun"},{n:"青沙浦 SKY WALK",c:"sight"},
+    {n:"廣安里咖啡街",c:"cafe"},{n:"五六島天空步道",c:"sight"},{n:"太宗台",c:"sight"},
+    {n:"海東龍宮寺",c:"sight"},{n:"札嘎其市場",c:"food"},{n:"BIFF 廣場小吃",c:"food"},{n:"光復洞時尚街",c:"shop"}
+  ]
+};
+
+const AV_COLORS = ["#ef6b3f","#1597a5","#c0567f","#7c63d8","#2bb673","#e0a72e","#5a7385","#d8556e","#3a86c8","#e2622f"];
+
+/* tour prices from 回條 (NT$) */
+const TOUR = {
+  saseho:{ a:{over:2720,under:3450}, b:{over:2550,under:3260} },
+  busan:{ a:{over:3680,under:4380}, b:{over:3150,under:3850} }
+};
+
+/* =========================================================
+   STORAGE ABSTRACTION (支援 Firebase 即時資料庫或本機 localStorage)
+========================================================= */
+function checkLocalStorageUsable() {
+  try {
+    if (typeof localStorage === "undefined") return false;
+    const testKey = "__storage_test__";
+    localStorage.setItem(testKey, "test");
+    localStorage.removeItem(testKey);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+// 檢查 Firebase 設定是否已被修改啟用
+const isFirebaseConfigured = firebaseConfig && firebaseConfig.apiKey && firebaseConfig.apiKey !== "YOUR_API_KEY";
+
+let db = null;
+if (isFirebaseConfigured) {
+  try {
+    firebase.initializeApp(firebaseConfig);
+    db = firebase.database();
+  } catch (e) {
+    console.error("Firebase 整合初始化失敗：", e);
+  }
+}
+
+const Store = {
+  mode: db ? "cloud" : (checkLocalStorageUsable() ? "local" : "mem"),
+  mem: {},
+  get ok() {
+    return this.mode === "cloud" || this.mode === "local";
+  },
+  async get(key, shared){
+    // 如果開啟 shared（如討論區景點），且已配置雲端資料庫
+    if (shared && this.mode === "cloud") {
+      try {
+        const snapshot = await db.ref(key).once("value");
+        return snapshot.exists() ? JSON.stringify(snapshot.val()) : null;
+      } catch (e) {
+        console.error("Firebase 資料讀取失敗：", e);
+      }
+    }
+    // 預設本機儲存 fallback
+    if (checkLocalStorageUsable()) {
+      try { return localStorage.getItem("cruise:" + key); } catch(e) {}
+    }
+    return (key in this.mem) ? this.mem[key] : null;
+  },
+  async set(key, val, shared){
+    // 如果開啟 shared（如討論區景點），且已配置雲端資料庫
+    if (shared && this.mode === "cloud") {
+      try {
+        const parsedVal = JSON.parse(val);
+        await db.ref(key).set(parsedVal);
+        return true;
+      } catch (e) {
+        console.error("Firebase 資料存入失敗：", e);
+        return false;
+      }
+    }
+    // 預設本機儲存 fallback
+    if (checkLocalStorageUsable()) {
+      try {
+        localStorage.setItem("cruise:" + key, val);
+        return true;
+      } catch(e) {}
+    }
+    this.mem[key] = val;
+    return false;
+  }
+};
+
+/* =========================================================
+   STATE
+========================================================= */
+let me = { name:null, color:null };
+let curPort = "saseho";
+let curCat = "sight";
+let sortMode = "votes";
+let spotsCache = { saseho:[], busan:[] };
+const calc = { wifi:0, drink:0, dineN:0, saseho:"free", busan:"free", sizeSaseho:"over", sizeBusan:"over", pax:2 };
+
+/* =========================================================
+   HELPERS
+========================================================= */
+function esc(s){ return String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m])); }
+function nf(n){ return Math.round(n).toLocaleString("en-US"); }
+function colorFor(name){ let h=0; for(let i=0;i<name.length;i++) h=name.charCodeAt(i)+((h<<5)-h); return AV_COLORS[Math.abs(h)%AV_COLORS.length]; }
+function catObj(k){ return CATS.find(c=>c.k===k)||CATS[5]; }
+function toast(msg){ const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove("show"),2200); }
+function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
+function isValidUrl(u){ return /^https?:\/\//i.test(u); }
+
+/* =========================================================
+   RENDER STATIC SECTIONS
+========================================================= */
+function renderDays(){
+  const wrap=document.getElementById("daysAcc");
+  wrap.innerHTML=DAYS.map(d=>{
+    const tm = (d.arr||d.dep)
+      ? `${d.arr?`抵 <span>${d.arr}</span><br>`:""}${d.dep?`離 <span>${d.dep}</span>`:""}`
+      : `<span>${(d.time||"").replace(/[0-9:]+/g,m=>`</span>${m}<span>`)}</span>`;
+    const meals=d.meals.map(m=>{const[a,...b]=m.split(" ");return `<span class="m"><b>${a}</b> ${b.join(" ")}</span>`}).join("");
+    const pts=d.pts.map(p=>`<li>${p}</li>`).join("");
+    const goBtn = d.port ? `<a class="dgo" data-go="discuss" data-port="${d.port}" role="button" tabindex="0">🗺️ 去討論區規劃 ${d.title} 自由行</a>` : "";
+    return `<div class="dacc">
+      <div class="dacc-head" onclick="toggleDay(this)">
+        <div class="n">DAY<small>${d.icon}</small>${d.n}</div>
+        <div class="ttl">${d.title}<span class="sub">${d.date} ${d.dow} · ${d.sub}</span></div>
+        <div class="tm">${tm}</div>
+        <div class="arr">⌄</div>
+      </div>
+      <div class="dacc-body"><div class="dacc-inner">
+        <div class="meal">${meals}</div>
+        <ul class="dlist">${pts}</ul>
+        ${goBtn}
+      </div></div>
+    </div>`;
+  }).join("");
+}
+function toggleDay(h){ const d=h.parentElement; const b=d.querySelector(".dacc-body"); const open=d.classList.toggle("open"); b.style.maxHeight=open? b.firstElementChild.scrollHeight+40+"px":"0"; }
+
+function renderShip(){
+  document.getElementById("shipGrid").innerHTML=SHIP.map(s=>`
+    <div class="feat">
+      <div class="fic">${s.ic}</div>
+      <h3>${s.t} <span class="tag ${s.tag==="free"?"tag-free":"tag-paid"}">${s.tag==="free"?"免費":"自費"}</span></h3>
+      <p>${s.d}</p>
+    </div>`).join("");
+}
+
+function renderNotes(){
+  document.getElementById("notesAcc").innerHTML=NOTES.map(n=>`
+    <div class="acc-item">
+      <div class="acc-h" onclick="toggleAcc(this)"><span class="ai">${n.ic}</span>${n.t}<span class="arr">⌄</span></div>
+      <div class="acc-c"><div class="pad">${n.body}</div></div>
+    </div>`).join("");
+}
+function toggleAcc(h){ const it=h.parentElement; const c=it.querySelector(".acc-c"); const open=it.classList.toggle("open"); c.style.maxHeight=open? c.firstElementChild.scrollHeight+30+"px":"0"; }
+
+function renderConfirm(){
+  const LBL={k:["lk","已知"],m:["lm","我查"],p:["lp","待確認"]};
+  document.getElementById("confirmAcc").innerHTML=CONFIRM.map(g=>{
+    const items=g.items.map(it=>{
+      const has={k:false,m:false,p:false}; it.lines.forEach(l=>{has[l.t]=true;});
+      const pills=(has.k?'<span class="pill k">已知</span>':'')+(has.m?'<span class="pill m">我查的</span>':'')+(has.p?'<span class="pill p">待旅行社</span>':'');
+      const lns=it.lines.map(l=>`<div class="ln"><span class="lbl ${LBL[l.t][0]}">${LBL[l.t][1]}</span>${l.text}</div>`).join("");
+      return `<div class="qa"><div class="q"><span class="qx">${it.q}</span>${pills}</div>${lns}</div>`;
+    }).join("");
+    return `<div class="acc-item">
+      <div class="acc-h" onclick="toggleAcc(this)"><span class="ai">${g.ic}</span>${g.t}<span class="arr">⌄</span></div>
+      <div class="acc-c"><div class="pad">${items}</div></div>
+    </div>`;
+  }).join("");
+}
+
+function toggleFold(id){ const f=document.getElementById(id); const c=f.querySelector(".fold-c"); const open=f.classList.toggle("open"); c.style.maxHeight=open? c.firstElementChild.scrollHeight+30+"px":"0"; }
+
+/* checklist */
+async function renderChecklist(){
+  let saved={}; try{ const r=await Store.get("prep-checklist",false); if(r) saved=JSON.parse(r); }catch(e){}
+  const grid=document.getElementById("clGrid");
+  grid.innerHTML=CHECKLIST.map((c,i)=>`
+    <div class="cl-item ${saved[i]?"done":""}" onclick="toggleCheck(${i})">
+      <div class="cl-box">✓</div><span class="txt">${c}</span>
+    </div>`).join("");
+  updateClBar(saved);
+  grid._saved=saved;
+}
+function updateClBar(saved){
+  const done=Object.values(saved).filter(Boolean).length, tot=CHECKLIST.length;
+  document.getElementById("clBar").style.width=(done/tot*100)+"%";
+  document.getElementById("clLab").textContent=`完成 ${done}／${tot}`;
+}
+async function toggleCheck(i){
+  const grid=document.getElementById("clGrid"); const saved=grid._saved||{};
+  saved[i]=!saved[i];
+  grid.children[i].classList.toggle("done",saved[i]);
+  updateClBar(saved);
+  await Store.set("prep-checklist",JSON.stringify(saved),false);
+}
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
+function tickCountdown(){
+  const target=new Date("2026-07-25T17:00:00+08:00").getTime();
+  const now=Date.now(); let diff=Math.max(0,target-now);
+  const d=Math.floor(diff/864e5); diff-=d*864e5;
+  const h=Math.floor(diff/36e5); diff-=h*36e5;
+  const m=Math.floor(diff/6e4); diff-=m*6e4;
+  const s=Math.floor(diff/1e3);
+  document.getElementById("cd-d").textContent=d;
+  document.getElementById("cd-h").textContent=String(h).padStart(2,"0");
+  document.getElementById("cd-m").textContent=String(m).padStart(2,"0");
+  document.getElementById("cd-s").textContent=String(s).padStart(2,"0");
+}
+
+/* =========================================================
+   SCROLLSPY
+========================================================= */
+function initSpy(){
+  const ids=["overview","daily","ship","dining","cost","notes","confirm","discuss"];
+  const links={}; document.querySelectorAll("#navLinks a").forEach(a=>{const k=a.dataset.go||(a.getAttribute("href")||"").slice(1); if(k) links[k]=a;});
+  const obs=new IntersectionObserver(es=>{
+    es.forEach(e=>{ if(e.isIntersecting){ Object.values(links).forEach(l=>l.classList.remove("active")); if(links[e.target.id]) links[e.target.id].classList.add("active"); } });
+  },{rootMargin:"-45% 0px -50% 0px"});
+  ids.forEach(id=>{const el=document.getElementById(id); if(el) obs.observe(el);});
+}
+
+/* =========================================================
+   COST ESTIMATOR
+========================================================= */
+function switchCalc(t){
+  document.querySelectorAll(".calc-tabs button").forEach(b=>b.classList.toggle("on",b.dataset.ctab===t));
+  document.getElementById("ctab-onboard").style.display=t==="onboard"?"block":"none";
+  document.getElementById("ctab-offship").style.display=t==="offship"?"block":"none";
+}
+function setSeg(group,val,price){
+  calc[group]=price;
+  document.querySelectorAll(`#seg-${group} button`).forEach(b=>b.classList.toggle("on",b.dataset.v===val));
+  renderTotal();
+}
+function stepDine(n){ calc.dineN=Math.max(0,calc.dineN+n); document.getElementById("dineV").textContent=calc.dineN; renderTotal(); }
+function stepPax(n){ calc.pax=Math.max(1,calc.pax+n); document.getElementById("paxV").textContent=calc.pax; renderTotal(); }
+function setOff(port,mode){
+  calc[port]=mode;
+  document.querySelectorAll(`#seg-${port} button`).forEach(b=>b.classList.toggle("on",b.dataset.v===mode));
+  document.getElementById(`${port}-free`).style.display=mode==="free"?"flex":"none";
+  document.getElementById(`${port}-tour`).style.display=mode==="tour"?"block":"none";
+  renderTotal();
+}
+function setSize(port,sz){
+  calc[port==="saseho"?"sizeSaseho":"sizeBusan"]=sz;
+  document.querySelectorAll(`#size-${port} button`).forEach((b,i)=>b.classList.toggle("on",(i===0&&sz==="over")||(i===1&&sz==="under")));
+  renderTotal();
+}
+function offAmount(port){
+  const mode=calc[port];
+  if(mode==="none") return 0;
+  if(mode==="free") return Math.max(0,parseInt(document.getElementById(port+"Free").value)||0);
+  const sel=document.getElementById(port+"TourSel").value;
+  const sz=calc[port==="saseho"?"sizeSaseho":"sizeBusan"];
+  return TOUR[port][sel][sz];
+}
+function renderTotal(){
+  const wifi=calc.wifi, drink=calc.drink;
+  const dineUnit=Math.max(0,parseInt(document.getElementById("dineUnit").value)||0);
+  const dine=calc.dineN*dineUnit;
+  const extra=Math.max(0,parseInt(document.getElementById("extraOnboard").value)||0);
+  const onboard=wifi+drink+dine+extra;
+  const sas=offAmount("saseho"), bus=offAmount("busan");
+  const per=onboard+sas+bus;
+
+  document.getElementById("perTotal").innerHTML=`NT$${nf(per)} <small>/ 人</small>`;
+
+  const offLabel=(port)=>{ const m=calc[port]; return m==="none"?"不下船":m==="free"?"自由行":"官方行程"; };
+  const rows=[];
+  rows.push(`<div class="row"><span>🛳️ 船上小計</span><b>NT$${nf(onboard)}</b></div>`);
+  if(wifi) rows.push(`<div class="row sub"><span>　└ WiFi</span><b>NT$${nf(wifi)}</b></div>`);
+  if(drink) rows.push(`<div class="row sub"><span>　└ 飲料套餐</span><b>NT$${nf(drink)}</b></div>`);
+  if(dine) rows.push(`<div class="row sub"><span>　└ 特色餐廳 ×${calc.dineN}</span><b>NT$${nf(dine)}</b></div>`);
+  if(extra) rows.push(`<div class="row sub"><span>　└ 其他</span><b>NT$${nf(extra)}</b></div>`);
+  rows.push(`<hr>`);
+  rows.push(`<div class="row"><span>⛩️ 佐世保（${offLabel("saseho")}）</span><b>NT$${nf(sas)}</b></div>`);
+  rows.push(`<div class="row"><span>🏯 釜山（${offLabel("busan")}）</span><b>NT$${nf(bus)}</b></div>`);
+  document.getElementById("breakdown").innerHTML=rows.join("");
+
+  document.getElementById("groupTotal").innerHTML=`👥 ${calc.pax} 人合計約 <b>NT$${nf(per*calc.pax)}</b>`;
+}
+
+/* =========================================================
+   DISCUSSION — name
+========================================================= */
+async function loadMe(){
+  const n=await Store.get("me-name",false);
+  if(n){ me.name=n; me.color=await Store.get("me-color",false)||colorFor(n); showWhoAmI(); }
+}
+async function saveName(){
+  const v=document.getElementById("nameInput").value.trim();
+  if(!v){ toast("先輸入一個暱稱吧 🙂"); return; }
+  me.name=v; me.color=colorFor(v);
+  await Store.set("me-name",v,false); await Store.set("me-color",me.color,false);
+  showWhoAmI(); toast(`歡迎，${v}！開始新增景點吧 🗺️`);
+}
+function showWhoAmI(){
+  document.getElementById("nameGate").style.display="none";
+  const w=document.getElementById("whoAmI"); w.style.display="flex";
+  w.innerHTML=`<span class="av" style="background:${me.color}">${esc(me.name[0].toUpperCase())}</span>
+    <span>嗨，${esc(me.name)} 👋 你新增的景點會標上你的名字</span>
+    <button class="chg" onclick="changeName()">換暱稱</button>`;
+}
+function changeName(){
+  document.getElementById("whoAmI").style.display="none";
+  const g=document.getElementById("nameGate"); g.style.display="flex";
+  document.getElementById("nameInput").value=me.name||""; document.getElementById("nameInput").focus();
+}
+
+/* category picker */
+function renderCatPick(){
+  document.getElementById("catPick").innerHTML=CATS.map(c=>`
+    <button data-k="${c.k}" class="${c.k===curCat?"on":""}" style="${c.k===curCat?`background:${c.color}`:""}" onclick="pickCat('${c.k}')">${c.emoji} ${c.label}</button>`).join("");
+}
+function pickCat(k){ curCat=k; renderCatPick(); }
+
+/* ideas chips */
+function renderIdeas(){
+  document.getElementById("ideaChips").innerHTML=IDEAS[curPort].map(it=>`
+    <button class="chip-idea" onclick="addFromIdea('${esc(it.n)}','${it.c}')"><span class="plus">＋</span>${esc(it.n)} ${catObj(it.c).emoji}</button>`).join("");
+}
+async function addFromIdea(name,cat){
+  if(!me.name){ toast("先在上面輸入暱稱進入討論區 🙂"); document.getElementById("nameInput").focus(); return; }
+  await pushSpot({name, cat, note:"", cost:"", map:""});
+  toast(`已加入：${name}`);
+}
+
+/* port tabs */
+function switchPort(p){
+  curPort=p;
+  document.getElementById("ptab-saseho").classList.toggle("on",p==="saseho");
+  document.getElementById("ptab-busan").classList.toggle("on",p==="busan");
+  renderIdeas(); renderSpots();
+}
+
+/* sort */
+function setSort(m){
+  sortMode=m;
+  document.getElementById("sort-votes").classList.toggle("on",m==="votes");
+  document.getElementById("sort-new").classList.toggle("on",m==="new");
+  renderSpots();
+}
+
+/* CRUD */
+function storeKey(p){ return "spots-"+p; }
+async function fetchSpots(p){
+  try{ const r=await Store.get(storeKey(p),true); return r? JSON.parse(r):[]; }catch(e){ return []; }
+}
+async function saveSpots(p,arr){ await Store.set(storeKey(p),JSON.stringify(arr),true); spotsCache[p]=arr; }
+
+async function addSpot(){
+  if(!me.name){ toast("先在上面輸入暱稱進入討論區 🙂"); document.getElementById("nameInput").focus(); return; }
+  const name=document.getElementById("spotName").value.trim();
+  if(!name){ toast("景點名稱要填一下喔 ✍️"); return; }
+  const cost=document.getElementById("spotCost").value.trim();
+  const note=document.getElementById("spotNote").value.trim();
+  let map=document.getElementById("spotMap").value.trim();
+  if(map && !isValidUrl(map)) map="https://"+map;
+  await pushSpot({name,cat:curCat,note,cost,map});
+  document.getElementById("spotName").value=""; document.getElementById("spotCost").value="";
+  document.getElementById("spotNote").value=""; document.getElementById("spotMap").value="";
+  toast("已新增！雲端同步中 📡");
+}
+async function pushSpot(o){
+  const arr=await fetchSpots(curPort);
+  arr.push({ id:uid(), name:o.name, cat:o.cat, note:o.note||"", cost:o.cost||"", map:o.map||"",
+    author:me.name, color:me.color, voters:[me.name], created:Date.now() });
+  await saveSpots(curPort,arr);
+  renderSpots();
+}
+async function toggleVote(id){
+  if(!me.name){ toast("先輸入暱稱才能投票 🙂"); return; }
+  const arr=await fetchSpots(curPort);
+  const s=arr.find(x=>x.id===id); if(!s) return;
+  s.voters=s.voters||[];
+  const i=s.voters.indexOf(me.name);
+  if(i>=0) s.voters.splice(i,1); else s.voters.push(me.name);
+  await saveSpots(curPort,arr); renderSpots();
+}
+async function delSpot(id){
+  const arr=await fetchSpots(curPort);
+  const s=arr.find(x=>x.id===id);
+  if(s && s.author!==me.name){ toast("只能刪除自己新增的景點"); return; }
+  if(!confirm("確定刪除這個景點嗎？")) return;
+  await saveSpots(curPort,arr.filter(x=>x.id!==id)); renderSpots();
+  toast("已刪除");
+}
+
+/* render list */
+async function renderSpots(){
+  let arr=spotsCache[curPort];
+  const list=document.getElementById("spotList");
+  if(sortMode==="votes") arr=[...arr].sort((a,b)=>(b.voters?.length||0)-(a.voters?.length||0)||b.created-a.created);
+  else arr=[...arr].sort((a,b)=>b.created-a.created);
+
+  document.getElementById("spotCount").textContent=arr.length;
+
+  if(!arr.length){
+    list.innerHTML=`<div class="empty"><span class="e">${curPort==="saseho"?"⛩️":"🏯"}</span>
+      <b>還沒有人新增景點</b>從上面的靈感點一下，或新增你自己想去的地方吧！</div>`;
+    return;
+  }
+  list.innerHTML=arr.map(s=>{
+    const c=catObj(s.cat); const votes=s.voters?.length||0; const voted=me.name && s.voters?.includes(me.name);
+    const mine=s.author===me.name;
+    const cost=s.cost? `<span class="ec">💸 ${esc(s.cost)}</span>`:"";
+    const map=s.map? `<span class="ec">📍 <a href="${esc(s.map)}" target="_blank" rel="noopener">地圖</a></span>`:"";
+    const extra=(cost||map)? `<div class="extra">${cost}${map}</div>`:"";
+    return `<div class="spot">
+      ${mine?`<button class="del" title="刪除" onclick="delSpot('${s.id}')">🗑️</button>`:""}
+      <span class="cat" style="background:${c.color}">${c.emoji} ${c.label}</span>
+      <div class="nm">${esc(s.name)}</div>
+      ${s.note?`<div class="nt">${esc(s.note)}</div>`:""}
+      ${extra}
+      <div class="foot">
+        <span class="av" style="background:${s.color||colorFor(s.author)}">${esc((s.author||"?")[0].toUpperCase())}</span>
+        <span class="auth"><b>${esc(s.author||"匿名")}</b>新增</span>
+        <button class="vote ${voted?"voted":""}" onclick="toggleVote('${s.id}')">👍 想去 <span class="c">${votes}</span></button>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+/* refresh / poll */
+async function refreshSpots(manual){
+  const [s,b]=await Promise.all([fetchSpots("saseho"),fetchSpots("busan")]);
+  const changed = JSON.stringify(s)!==JSON.stringify(spotsCache.saseho) || JSON.stringify(b)!==JSON.stringify(spotsCache.busan);
+  spotsCache.saseho=s; spotsCache.busan=b;
+  if(changed||manual){ renderSpots(); if(manual) toast("已更新 🔄"); }
+}
+
+/* =========================================================
+   INIT
+========================================================= */
+async function init(){
+  renderDays(); renderShip(); renderNotes(); renderConfirm(); renderCatPick(); renderIdeas();
+  await renderChecklist();
+  renderTotal();
+  tickCountdown(); setInterval(tickCountdown,1000);
+  initSpy();
+  await loadMe();
+  await refreshSpots(false);
+  renderSpots();
+  // 每 12 秒自動與 Firebase (或本機快取) 同步最新景點，實現多人即時討論
+  setInterval(()=>refreshSpots(false),12000);
+
+  // storage status note
+  const sn = document.getElementById("storageNote");
+  const sm = document.getElementById("storageMsg");
+  if (Store.mode === "cloud") {
+    sn.className = "storage-note";
+    sm.innerHTML = "🎉 <b>已啟用雲端資料庫（Firebase）！</b>您新增的景點與投票將會與所有開啟此網頁的同事即時同步。";
+  } else if (Store.mode === "local") {
+    sn.className = "storage-note";
+    sm.innerHTML = "提示：網頁目前處於「靜態單機模式」。討論區景點會安全儲存於<b>您目前的瀏覽器（localStorage）</b>。重整或關閉網頁後資料仍會保留在您的裝置，但其他人開啟此網頁時無法自動同步您新增的內容。";
+  } else {
+    sn.className = "storage-note storage-warn";
+    sm.innerHTML = "警告：當前瀏覽器不支援本機儲存（可能處於私密瀏覽或沙盒環境中），景點僅暫存於記憶體，重整頁面後將會消失。";
+  }
+
+  // open first day by default
+  const first=document.querySelector(".dacc"); if(first){ first.classList.add("open"); const b=first.querySelector(".dacc-body"); b.style.maxHeight=b.firstElementChild.scrollHeight+40+"px"; }
+}
+/* =========================================================
+   IN-PAGE NAV (sandbox-safe smooth scroll, no #hash navigation)
+========================================================= */
+function goTo(id){ const el=document.getElementById(id); if(el) el.scrollIntoView({behavior:"smooth",block:"start"}); }
+document.querySelectorAll("[data-go]").forEach(a=>{ if(!a.hasAttribute("tabindex")) a.setAttribute("tabindex","0"); if(!a.hasAttribute("role")) a.setAttribute("role","button"); });
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-go]"); if(!t) return;
+  e.preventDefault();
+  if(t.dataset.port) switchPort(t.dataset.port);
+  goTo(t.dataset.go);
+});
+document.addEventListener("keydown",e=>{
+  if(e.key!=="Enter" && e.key!==" ") return;
+  const t=e.target.closest && e.target.closest("[data-go]"); if(!t) return;
+  e.preventDefault();
+  if(t.dataset.port) switchPort(t.dataset.port);
+  goTo(t.dataset.go);
+});
+
+init();
+</script>
+</body>
+</html>
